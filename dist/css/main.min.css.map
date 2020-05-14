@@ -1,9 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AECA,AAAA,CAAC,AAAC,CACA,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACX,AAED,AAAA,IAAI,AAAC,CACH,WAAW,CAAE,GAAG,CAChB,MAAM,CAAE,CAAC,CACT,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,MAAM,CACjB,WAAW,CDDD,OAAO,CAAE,SAAS,CAAE,UAAU,CCExC,KAAK,CDRK,OAAO,CCSjB,gBAAgB,CDVP,OAAO,CCWjB,AAED,AAAA,CAAC,AAAC,CACA,eAAe,CAAE,IAAI,CACrB,KAAK,CDjBQ,OAAO,CCkBrB,AAED,AAAA,EAAE,AAAC,CACD,UAAU,CAAE,IAAI,CACjB,AAED,AAAA,EAAE,CACF,EAAE,CACF,EAAE,CACF,EAAE,AAAC,CACD,cAAc,CAAE,SAAS,CAC1B,AAED,AAAA,EAAE,AAAC,CACD,SAAS,CAAE,MAAM,CACjB,WAAW,CAAE,GAAG,CACjB",
     "sources": [
         "../../src/main.scss",
-        "../../src/_variables.scss"
+        "../../src/_variables.scss",
+        "../../src/_default.scss",
+        "../../src/_slide_show.scss"
     ],
     "names": [],
     "file": "main.min.css"

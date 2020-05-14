@@ -1,9 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AECA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,GAAG;EAChB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,MAAM;EACjB,WAAW,EDDD,OAAO,EAAE,SAAS,EAAE,UAAU;ECExC,KAAK,EDRK,OAAO;ECSjB,gBAAgB,EDVP,OAAO;CCWjB;;AAED,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,EDjBQ,OAAO;CCkBrB;;AAED,AAAA,EAAE,CAAC;EACD,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,EAAE;AACF,EAAE;AACF,EAAE;AACF,EAAE,CAAC;EACD,cAAc,EAAE,SAAS;CAC1B;;AAED,AAAA,EAAE,CAAC;EACD,SAAS,EAAE,MAAM;EACjB,WAAW,EAAE,GAAG;CACjB",
     "sources": [
         "../../src/main.scss",
-        "../../src/_variables.scss"
+        "../../src/_variables.scss",
+        "../../src/_default.scss",
+        "../../src/_slide_show.scss"
     ],
     "names": [],
     "file": "main.css"
