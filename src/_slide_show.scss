@@ -1,0 +1,147 @@
+body {
+  //   margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  .slider-items {
+    height: 100%;
+    .item {
+      height: 100%;
+      display: none;
+      &.active {
+        display: flex;
+      }
+
+      .img {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        animation: zoom 1s linear forwards;
+      }
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.05);
+        }
+      }
+      .caption {
+        position: relative;
+        max-width: 1170px;
+        z-index: 10;
+        margin: auto;
+        flex-grow: 1;
+        padding: 15px;
+        h1 {
+          margin: 0;
+          font-size: 50px;
+          animation: text 1s ease forwards;
+        }
+        p {
+          margin: 10px 0 0;
+          font-size: 20px;
+          animation: text 1s ease forwards;
+          animation-delay: 0.5s;
+          opacity: 0;
+        }
+        @keyframes text {
+          0% {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateX(0px);
+          }
+        }
+      }
+    }
+  }
+
+  .controls {
+    .prev,
+    .next {
+      position: absolute;
+      height: 40px;
+      width: 40px;
+      background-color: $mainBlack;
+      border-radius: 50%;
+      z-index: 11;
+      top: 50%;
+      margin-top: -20px;
+      color: $mainWhite;
+      text-align: center;
+      line-height: 40px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: $primaryColor;
+      }
+    }
+
+    .prev {
+      left: 30px;
+    }
+    .next {
+      right: 30px;
+    }
+  }
+
+  .slide-info {
+    position: absolute;
+    width: 280px;
+    padding: 15px;
+    left: 30px;
+    bottom: 40px;
+    background-color: $mainWhite;
+    padding-right: 50px;
+    .meter {
+      height: 5px;
+      background-color: $mainGrey;
+      width: 100%;
+      .inner {
+        width: 0px;
+        background-color: $primaryColor;
+        transition: all 1s linear;
+        height: 5px;
+      }
+    }
+    .number {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      //   background-color: $primaryColor;
+      color: $mainBlack;
+      height: 100%;
+      width: 35px;
+      text-align: center;
+      line-height: 35px;
+    }
+  }
+}
+
+// #progress {
+// }
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
