@@ -145,3 +145,29 @@ body {
     width: 100%;
   }
 }
+
+/*responsive*/
+@media (max-width: 1170px) {
+  .slider .slider-items .item .caption {
+    padding: 15px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider .controls .prev {
+    left: 10px;
+  }
+
+  slider .controls .prev {
+    right: 10px;
+  }
+  .slider .slider-items .item .caption {
+    padding: 15px 70px;
+    .text h1 {
+      font-size: 30px;
+    }
+    .text p {
+      font-size: 16px;
+    }
+  }
+}

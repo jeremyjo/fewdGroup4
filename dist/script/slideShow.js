@@ -45,6 +45,13 @@ function slide(direction) {
   }
   //   console.log(index);
 
+  // stoppes auto slide when user clicks
+  clearInterval(timer);
+
+  //starting auto slider again
+
+  timer = setInterval(autoSlide, duration);
+
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("active");
     //removes active class from all slides
@@ -82,7 +89,7 @@ function progress() {
 function autoSlide() {
   slide("next");
 }
-const timer = setInterval(autoSlide, duration);
+let timer = setInterval(autoSlide, duration);
 
 slideInfo();
 progress();
