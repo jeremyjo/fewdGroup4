@@ -4,12 +4,6 @@
 .bold {
   font-weight: bold;
 }
-// .underline {
-//   text-decoration: underline;
-// }
-// .strike {
-//   text-decoration: line-through;
-// }
 .capit {
   text-transform: capitalize;
 }
@@ -29,6 +23,34 @@
   font-style: italic;
   font-family: fantasy;
 }
+.line {
+  text-decoration: line-through !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
 
 // .variables {
 // }
+
+// 6rem (96px);	5rem (80px);	3rem (48px);	2.25rem (36px);	1.5rem (24px);	1.25rem (20px);	1rem (16px);	.875rem (14px);
+.font-1 {
+  font-size: 5rem;
+}
+.font-2 {
+  font-size: 3rem;
+}
+
+.font-3 {
+  font-size: 1.5rem;
+}
+.font-4 {
+  font-size: 1.25rem;
+}
+
+.font-5 {
+  font-size: 1rem;
+}
+.font-6 {
+  font-size: 0.875rem;
+}
