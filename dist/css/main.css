@@ -1,4 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+.primaryColor {
+  color: #a1a9fe;
+}
+
+.primDark {
+  color: #6f7bfd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +41,42 @@ h4 {
 h1 {
   font-size: 2.8rem;
   line-height: 1.2;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.text-center {
+  text-align: center;
 }
 
 body {
@@ -188,6 +232,94 @@ body {
   100% {
     width: 100%;
   }
+}
+
+/*responsive*/
+@media (max-width: 1170px) {
+  .slider .slider-items .item .caption {
+    padding: 15px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider .controls .prev {
+    left: 10px;
+  }
+  slider .controls .prev {
+    right: 10px;
+  }
+  .slider .slider-items .item .caption {
+    padding: 15px 70px;
+  }
+  .slider .slider-items .item .caption .text h1 {
+    font-size: 30px;
+  }
+  .slider .slider-items .item .caption .text p {
+    font-size: 16px;
+  }
+}
+
+.ital {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.capit {
+  text-transform: capitalize;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.low {
+  text-transform: lowercase;
+}
+
+.code {
+  font-family: Consolas, "courier new";
+  padding: 2px;
+  font-size: 105%;
+}
+
+.cite {
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.line {
+  text-decoration: line-through !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.font-1 {
+  font-size: 5rem;
+}
+
+.font-2 {
+  font-size: 3rem;
+}
+
+.font-3 {
+  font-size: 1.5rem;
+}
+
+.font-4 {
+  font-size: 1.25rem;
+}
+
+.font-5 {
+  font-size: 1rem;
+}
+
+.font-6 {
+  font-size: 0.875rem;
 }
 
 .displayGrid {
