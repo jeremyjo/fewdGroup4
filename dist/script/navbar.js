@@ -7,6 +7,9 @@ const navbarLI = document.querySelectorAll('.navbarUL > li');
 // hamburger menu
 const hamburgerMenu = document.createElement('i');
 
+// media query variable for mobile portrait mode
+var mobilePortrait = window.matchMedia("(max-width: 360px)");
+
 // media query variable for mobile landscape mode
 var landscape = window.matchMedia("(orientation: landscape)");
 
@@ -19,8 +22,13 @@ var desktop = window.matchMedia("(min-width: 1023px)");
 // checks to see if the .navbarUL class is used by the user(programmer)
 if (navbarLI.length) {
 
-    // defaul mode for navbar will be hidden
-    navbarUL.classList.add("vanish");
+    if (mobilePortrait.matches) {
+        navbarUL.classList.add("vanish");
+    }
+
+    if (landscape) {
+        navbarUL.classList.toggle('displayGrid');
+    }
 
     // inserts the hamburger menu into the DOM in <nav> before the <ul>
     nav.insertBefore(hamburgerMenu, navbarUL);
@@ -35,6 +43,8 @@ if (navbarLI.length) {
     });
 }
 
+mobilePortrait.addListener(fnMobilePortrait);
+
 // adds listener to the landscape media query. note executes both going to and coming out of landscape mode
 landscape.addListener(fnLandscape);
 
@@ -42,6 +52,14 @@ landscape.addListener(fnLandscape);
 tablet.addListener(fnTablet);
 
 // ============ function definitions: =================== //
+function fnMobilePortrait(event) {
+    console.log ("fnMobilePortrait");
+    event.preventDefault();
+
+    // defaul mode for navbar will be hidden
+    navbarUL.classList.add("vanish");
+}
+
 
 function fnLandscape(event){
     event.preventDefault();
