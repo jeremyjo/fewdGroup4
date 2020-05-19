@@ -31,9 +31,8 @@ const initialState = {
             numbers: 0,
             inCart: false
 
-        }
-    }
-    
+        } 
+    }  
 }
 
 export default (state = initialState, action) => {

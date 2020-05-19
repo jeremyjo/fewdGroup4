@@ -5,7 +5,7 @@ import Cart from './components/Cart'
 import './App.css';
 import { Provider} from 'react-redux';
 import store from './store';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';//create multiplae application
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Navbar/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/cart" component={Cart} />
+          <Route path="/Cart" component={Cart} />
         </Switch>
         
         </BrowserRouter>
