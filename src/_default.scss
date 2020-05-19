@@ -36,23 +36,62 @@ h1 {
 }
 
 // Padding
-.py {
+.pa {
   &-1 {
     padding: 1rem 0;
+    //top and bottom paddings are 1rem
+    //right and left paddings are 0px
   }
   &-2 {
     padding: 2rem 0;
+    //top and bottom paddings are 2rem
+    //right and left paddings are 0px
   }
   &-3 {
     padding: 3rem 0;
+    //top and bottom paddings are 3rem
+    //right and left paddings are 0px
   }
   &-4 {
     padding: 4rem 0;
+    //top and bottom paddings are 4rem
+    //right and left paddings are 0px
+  }
+}
+
+.all-sides-pa {
+  &-0 {
+    padding: 0;
+    //all four paddings are 0
+  }
+  &-1 {
+    padding: 0.25rem;
+    //all four paddings are 0.25rem
+  }
+  &-2 {
+    padding: 0.5rem;
+    //all four paddings are 0.5rem
+  }
+  &-3 {
+    padding: 1rem;
+    //all four paddings are 1rem
+  }
+  &-4 {
+    padding: 2rem;
+    //all four paddings are 2rem
+  }
+  &-5 {
+    padding: 4rem;
+    //all four paddings are 4rem
+  }
+  &-6 {
+    padding: 8rem;
+    //all four paddings are 8rem
   }
 }
 
 // Margin
-.my {
+.ma {
   &-1 {
     margin: 1rem 0;
   }
@@ -68,6 +107,17 @@ h1 {
 }
 
 //center
-.text-center {
-  text-align: center;
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-justify {
+    text-align: justify;
+  }
 }
