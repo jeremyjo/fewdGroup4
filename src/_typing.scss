@@ -33,6 +33,8 @@
 // alignments, abbreviations, addresses, block quotes, and lists
 
 // 6rem (96px);	5rem (80px);	3rem (48px);	2.25rem (36px);	1.5rem (24px);	1.25rem (20px);	1rem (16px);	.875rem (14px);
+
+// font size
 .font-1 {
   font-size: 5rem;
 }
@@ -52,4 +54,225 @@
 }
 .font-6 {
   font-size: 0.875rem;
+}
+
+//quotes
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+
+.fw9 {
+  font-weight: 900;
+}
+
+.lh-copy {
+  line-height: 1.5;
+}
+
+.pa4 {
+  padding: 2rem;
+}
+
+.ph0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.f4 {
+  font-size: 1.25rem;
+}
+
+.f6 {
+  font-size: 0.875rem;
+}
+
+.measure {
+  max-width: 30em;
+}
+
+.measure-narrow {
+  max-width: 20em;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 30em) {
+  .lh-title-ns {
+    line-height: 1.25;
+  }
+
+  .f1-ns {
+    font-size: 3rem;
+  }
+
+  .f4-ns {
+    font-size: 1.25rem;
+  }
+}
+
+.bl {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.b--blue {
+  border-color: #408bc9;
+}
+
+.bw2 {
+  border-width: 0.25rem;
+}
+
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+
+.fs-normal {
+  font-style: normal;
+}
+
+.tracked {
+  letter-spacing: 0.1em;
+}
+
+.lh-copy {
+  line-height: 1.5;
+}
+
+.black-90 {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.pa4 {
+  padding: 2rem;
+}
+
+.pl4 {
+  padding-left: 2rem;
+}
+
+.ml0 {
+  margin-left: 0;
+}
+
+.mt0 {
+  margin-top: 0;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.f5 {
+  font-size: 1rem;
+}
+
+.f6 {
+  font-size: 0.875rem;
+}
+
+.measure {
+  max-width: 30em;
+}
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .f4-m {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .f3-l {
+    font-size: 1.5rem;
+  }
+}
+
+// TYPE FACES
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+.serif {
+  font-family: georgia, times, serif;
+}
+.code {
+  font-family: Consolas, monaco, monospace;
+}
+.courier {
+  font-family: "Courier Next", courier, monospace;
+}
+.helvetica {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+.avenir {
+  font-family: "avenir next", avenir, sans-serif;
+}
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+.georgia {
+  font-family: georgia, serif;
+}
+.times {
+  font-family: times, serif;
+}
+.bodoni {
+  font-family: "Bodoni MT", serif;
+}
+.calisto {
+  font-family: "Calisto MT", serif;
+}
+.garamond {
+  font-family: garamond, serif;
+}
+.baskerville {
+  font-family: baskerville, serif;
+}
+
+// measure for text
+
+.measure-wide {
+  max-width: 34em;
+}
+.measure {
+  max-width: 30em;
+}
+.measure-narrow {
+  max-width: 20em;
+}
+
+//.normal { font-weight: normal; }
+.b {
+  font-weight: bold;
+}
+.fw1 {
+  font-weight: 100;
+}
+.fw2 {
+  font-weight: 200;
+}
+.fw3 {
+  font-weight: 300;
+}
+.fw4 {
+  font-weight: 400;
+}
+.fw5 {
+  font-weight: 500;
+}
+.fw6 {
+  font-weight: 600;
+}
+.fw7 {
+  font-weight: 700;
+}
+.fw8 {
+  font-weight: 800;
+}
+.fw9 {
+  font-weight: 900;
 }
