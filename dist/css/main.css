@@ -119,6 +119,11 @@ h1 {
   text-align: justify;
 }
 
+.El-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -362,151 +367,123 @@ body {
   font-size: 0.875rem;
 }
 
-.athelas {
-  font-family: athelas, georgia, serif;
-}
-
-.fw9 {
-  font-weight: 900;
-}
-
-.lh-copy {
-  line-height: 1.5;
-}
-
-.pa4 {
-  padding: 2rem;
-}
-
-.ph0 {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.f4 {
-  font-size: 1.25rem;
-}
-
-.f6 {
-  font-size: 0.875rem;
-}
-
-.measure {
+.MaxW {
   max-width: 30em;
 }
 
-.measure-narrow {
+.MaxW-wide {
+  max-width: 34em;
+}
+
+.MaxW-narrow {
   max-width: 20em;
 }
 
-.center {
-  margin-right: auto;
-  margin-left: auto;
+.fontW-1 {
+  font-weight: 100;
 }
 
-@media screen and (min-width: 30em) {
-  .lh-title-ns {
-    line-height: 1.25;
-  }
-  .f1-ns {
-    font-size: 3rem;
-  }
-  .f4-ns {
-    font-size: 1.25rem;
-  }
+.fontW-2 {
+  font-weight: 200;
 }
 
-.bl {
+.fontW-3 {
+  font-weight: 300;
+}
+
+.fontW-4 {
+  font-weight: 400;
+}
+
+.fontW-5 {
+  font-weight: 500;
+}
+
+.fontW-6 {
+  font-weight: 600;
+}
+
+.fontW-7 {
+  font-weight: 700;
+}
+
+.fontW-8 {
+  font-weight: 800;
+}
+
+.fontW-9 {
+  font-weight: 900;
+}
+
+.lHeight-consolid {
+  line-height: 1;
+}
+
+.lHeight-title {
+  line-height: 1.25;
+}
+
+.lHeight-copy {
+  line-height: 1.5;
+}
+
+.border-l {
   border-left-style: solid;
   border-left-width: 1px;
 }
 
-.b--blue {
-  border-color: #408bc9;
+.border-r {
+  border-right-style: solid;
+  border-right-width: 1px;
 }
 
-.bw2 {
-  border-width: 0.25rem;
+.border-blue {
+  border-color: #a1a9fe;
 }
 
-.athelas {
-  font-family: athelas, georgia, serif;
-}
-
-.fs-normal {
-  font-style: normal;
-}
-
-.tracked {
-  letter-spacing: 0.1em;
-}
-
-.lh-copy {
-  line-height: 1.5;
-}
-
-.black-90 {
-  color: rgba(0, 0, 0, 0.9);
-}
-
-.pa4 {
-  padding: 2rem;
-}
-
-.pl4 {
-  padding-left: 2rem;
-}
-
-.ml0 {
+.blockquate {
   margin-left: 0;
+  margin-top: 0;
+  padding-left: 2rem;
+  color: #383838;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-width: 0.25rem;
+  border-color: #a1a9fe;
 }
 
-.mt0 {
+.blockquate-p {
+  font-size: 1.5rem;
+  line-height: 1;
+  max-width: 30em;
   margin-top: 0;
 }
 
-.ttu {
+.blockquate-c {
   text-transform: uppercase;
-}
-
-.f5 {
-  font-size: 1rem;
-}
-
-.f6 {
   font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  font-style: normal;
 }
 
-.measure {
-  max-width: 30em;
+.list-non {
+  list-style-type: none;
 }
 
-@media screen and (min-width: 30em) and (max-width: 60em) {
-  .f4-m {
-    font-size: 1.25rem;
-  }
+.list-fun {
+  list-style-type: "\1F44D";
 }
 
-@media screen and (min-width: 60em) {
-  .f3-l {
-    font-size: 1.5rem;
-  }
+.list-sq {
+  list-style-type: square;
+}
+
+.list-cir {
+  list-style-type: circle;
 }
 
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
-}
-
-.serif {
-  font-family: georgia, times, serif;
-}
-
-.code {
-  font-family: Consolas, monaco, monospace;
-}
-
-.courier {
-  font-family: "Courier Next", courier, monospace;
 }
 
 .helvetica {
@@ -515,6 +492,10 @@ body {
 
 .avenir {
   font-family: "avenir next", avenir, sans-serif;
+}
+
+.serif {
+  font-family: georgia, times, serif;
 }
 
 .athelas {
@@ -545,56 +526,12 @@ body {
   font-family: baskerville, serif;
 }
 
-.measure-wide {
-  max-width: 34em;
+.code {
+  font-family: Consolas, monaco, monospace;
 }
 
-.measure {
-  max-width: 30em;
-}
-
-.measure-narrow {
-  max-width: 20em;
-}
-
-.b {
-  font-weight: bold;
-}
-
-.fw1 {
-  font-weight: 100;
-}
-
-.fw2 {
-  font-weight: 200;
-}
-
-.fw3 {
-  font-weight: 300;
-}
-
-.fw4 {
-  font-weight: 400;
-}
-
-.fw5 {
-  font-weight: 500;
-}
-
-.fw6 {
-  font-weight: 600;
-}
-
-.fw7 {
-  font-weight: 700;
-}
-
-.fw8 {
-  font-weight: 800;
-}
-
-.fw9 {
-  font-weight: 900;
+.courier {
+  font-family: "Courier Next", courier, monospace;
 }
 
 .displayGrid {

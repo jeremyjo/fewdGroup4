@@ -11,13 +11,13 @@
     /> -->
     <link href="../css/main.min.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="all-sides-pa-4">
     <div class="text-center pa-1 ma-1">
       <h1 class="pa-1">--TYPOGRAPHY--</h1>
       <p class="ital pa-1">If you need italicize style use class 'ital'</p>
       <p class="bold pa-1">If you need bold style use class 'bold'</p>
 
-      <h2 class="primaryColor pa-1">Transformation styling</h2>
+      <h2 class="primaryColor pa-1">--Transformation styling--</h2>
       <p class="capit pa-1">
         If you need capitalize your text use class 'capit'
       </p>
@@ -34,7 +34,7 @@
         <span class="primaryColor"> All that glitters is not gold</span> use
         class 'cite'.
       </p>
-      <h2 class="primaryColor pa-1 up">text decoration styling</h2>
+      <h2 class="primaryColor pa-1 up">--text decoration styling--</h2>
       <p class="pa-1">
         If you need underline your text like this:
         <span class="primaryColor underline"> Brevity is the soul of wit</span>
@@ -99,45 +99,127 @@ addresses, block quotes, and lists.  -->
 
     <!--QUATES-->
 
+    <h2 class="primaryColor pa-1 up text-center">--QUOTES--</h2>
     <!--first-->
 
-    <h2 class="primaryColor py-1 up text-center">--QUATES--</h2>
-    <article class="athelas pa4">
-      <p class="f6 f4-ns lh-copy measure center">
+    <!-- <article class="athelas all-sides-pa-4">
+      <p class="font-4 lHeight-copy MaxW El-center">
+     
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. In non ex
         suscipit consequatur fugiat deserunt perferendis cumque, possimus
         impedit laudantium consequuntur dolorum sapiente. Optio accusantium
         iusto autem, illo veritatis laborum.
       </p>
-      <blockquote class="ph0 f4 f1-ns measure-narrow center">
-        <p class="fw9 lh-copy lh-title-ns">
-          Good night, good night! parting is such sweet sorrow, That I shall say
-          good night till it be morrow.
+      <blockquote class="font-2 MaxW-narrow El-center">
+      
+        <p class="fontW-9 lHeight-copy">
+        
+          ‘Those are pearls that were his eyes. Nothing of him that doth fade,
+          but doth suffer a sea-change into something rich and strange.’
         </p>
       </blockquote>
-      <p class="f6 f4-ns lh-copy measure center">
+      <p class="font-4 lHeight-copy MaxW El-center">
+       
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. In non ex
         suscipit consequatur fugiat deserunt perferendis cumque, possimus
         impedit laudantium consequuntur dolorum sapiente. Optio accusantium
         iusto autem, illo veritatis laborum.
       </p>
-    </article>
+    </article> -->
 
     <!-- second -->
-
+    <p class="primDark">
+      Use : <br />- class "blockquate" for parent element (< blockquote >) to
+      style quote the way presented below.<br />
+      - class "blockquate-p" for child elemepnt (paragraph < p > )<br />
+      - class "blockquate-c" for child elemepnt (< cite > )<br />
+      - add desired typeface by adding one of the typefaces classses (check the
+      TYPE_FACE section).<br />
+      In example below we used class="helvetica" for paragraph < p >
+    </p>
     <div class="all-sides-pa-4">
-      <blockquote class="athelas ml0 mt0 pl4 black-90 bl bw2 b--blue">
-        <p class="f5 f4-m f3-l lh-copy measure mt0">
-          Discipline in typography is a prime virtue. Individuality must be
-          secured by means that are rational. Distinction needs to be won by
-          simplicity and restraint. It is equally true that these qualities need
-          to be infused wiht a certain spirit and vitality, or they degenerate
-          into dullness and mediocrity.
+      <blockquote class="helvetica blockquate">
+        <p class="blockquate-p">
+          ‘Life’s but a walking shadow, a poor player, that struts and frets his
+          hour upon the stage, and then is heard no more; it is a tale told by
+          an idiot, full of sound and fury, signifying nothing.’
         </p>
-        <cite class="f6 ttu tracked fs-normal">―Stanley Morison</cite>
+        <cite class="blockquate-c">―William Shakespeare</cite>
       </blockquote>
     </div>
 
     <!--TYPE_FACES -->
+    <h2 class="primaryColor pa-1 up text-center">--TYPEFACES--</h2>
+
+    <!--Lists-->
+    <h2 class="primaryColor pa-1 up text-center">--Lists--</h2>
+    <p class="primDark">
+      class="list-none"
+    </p>
+    <ul class="list-none">
+      <li>
+        Lorem ipsum dolor sit amet.
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet
+      </li>
+    </ul>
+    <p class="primDark">
+      class="list-cir"
+    </p>
+    <ul class="list-cir">
+      <li>
+        Lorem, ipsum dolor sit amet consectetur
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur
+      </li>
+    </ul>
+    <p class="primDark">
+      class="list-sq"
+    </p>
+    <ul class="list-sq">
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing
+      </li>
+    </ul>
+    <p class="primDark">
+      class="list-fun"
+    </p>
+    <ul class="list-fun">
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </li>
+      <li>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </li>
+    </ul>
   </body>
 </html>

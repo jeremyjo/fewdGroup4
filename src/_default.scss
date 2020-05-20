@@ -106,7 +106,7 @@ h1 {
   }
 }
 
-//center
+//center text
 .text {
   &-center {
     text-align: center;
@@ -120,4 +120,9 @@ h1 {
   &-justify {
     text-align: justify;
   }
+}
+//center Element
+.El-center {
+  margin-right: auto;
+  margin-left: auto;
 }
