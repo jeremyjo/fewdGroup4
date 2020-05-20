@@ -1,10 +1,21 @@
 // loads FontAwesome
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
 
+// hamburger menu styling
+i.fas.fa-bars {
+    color: $hamburgerMenu;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 1em;
+}
+
+// used to display the navbar
 .displayGrid {
     display: grid;
 }
 
+// used to remove the navbar
 .vanish {
     display: none;
 }
@@ -14,6 +25,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     text-align: center;
+
+    & li a {
+        display: block;
+    }
 }
 
 // navbar <li> styling
@@ -21,13 +36,13 @@
     border: 1px solid black;
 }
 
-// hamburger menu styling
-i {
-    color: $header;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 1em;
+.activeLI {
+    background-color: $navbarBackground;
+    border-radius: 8px;
+}
+
+.whiteText {
+    color: #fff;
 }
 
 // landscape media query
@@ -50,7 +65,7 @@ i {
     }
 }
 
-// tablet and desktop query
+// tablet media query
 @media screen and (min-width: 768px) {
     ul {
         margin-top: 1em;
@@ -70,6 +85,24 @@ i {
     }
 }
 
-@media screen and (min-width: 1024px) {
+// desktop media query
+// @media screen and (min-width: 1024px) {
+@media screen and (min-width: 900px) {
+
+// creates a border bottom CSS animation. border is under the <a>
+    .navbarUL li {
+        & a:after {
+                content: "";
+                display: block;
+                margin: 0 auto;
+                border-bottom: 1px solid $primaryColor;
+                width: 0%;
+                transition: 1.5s ease-out;
+        }
+        & a:hover:after {
+            width: 30%;
+            border-bottom-color: $navbarBackground
+        }
+    }
 
 }
