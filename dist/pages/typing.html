@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>--TYPOGRAPHY--</title>
+    <style>
+      .flex {
+        display: flex;
+      }
+    </style>
 
     <!-- <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     /> -->
     <link href="../css/main.min.css" rel="stylesheet" />
+    <link href="../css/main.min.css" rel="stylesheet" />
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=html&amp;skin=default"></script>
   </head>
   <body class="all-sides-pa-4">
     <div class="text-center pa-1 ma-1">
@@ -137,7 +144,7 @@ addresses, block quotes, and lists.  -->
       TYPE_FACE section).<br />
       In example below we used class="helvetica" for paragraph < p >
     </p>
-    <div class="all-sides-pa-4">
+    <div class="flex all-sides-pa-4">
       <blockquote class="helvetica blockquate">
         <p class="blockquate-p">
           ‘Life’s but a walking shadow, a poor player, that struts and frets his
@@ -146,6 +153,16 @@ addresses, block quotes, and lists.  -->
         </p>
         <cite class="blockquate-c">―William Shakespeare</cite>
       </blockquote>
+      <pre class="prettyprint"><code>
+         &lt;blockquote class="helvetica blockquate"&gt;
+           &lt;p class="blockquate-p"&gt;
+            ‘Life’s but a walking shadow, a poor player, that struts and frets his
+            hour upon the stage, and then is heard no more; it is a tale told by
+            an idiot, full of sound and fury, signifying nothing.’
+           &lt;/p&gt;
+           &lt;cite class="blockquate-c"&gt;―William Shakespeare &lt;/cite&gt;
+         &lt;/blockquote&gt;
+      </code></pre>
     </div>
 
     <!--TYPE_FACES -->
