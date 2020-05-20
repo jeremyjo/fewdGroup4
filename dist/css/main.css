@@ -1,4 +1,12 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+.primaryColor {
+  color: #a1a9fe;
+}
+
+.primDark {
+  color: #6f7bfd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +41,186 @@ h4 {
 h1 {
   font-size: 2.8rem;
   line-height: 1.2;
+}
+
+.pa-1 {
+  padding: 1rem 0;
+}
+
+.pa-2 {
+  padding: 2rem 0;
+}
+
+.pa-3 {
+  padding: 3rem 0;
+}
+
+.pa-4 {
+  padding: 4rem 0;
+}
+
+.all-sides-pa-0 {
+  padding: 0;
+}
+
+.all-sides-pa-1 {
+  padding: 0.25rem;
+}
+
+.all-sides-pa-2 {
+  padding: 0.5rem;
+}
+
+.all-sides-pa-3 {
+  padding: 1rem;
+}
+
+.all-sides-pa-4 {
+  padding: 2rem;
+}
+
+.all-sides-pa-5 {
+  padding: 4rem;
+}
+
+.all-sides-pa-6 {
+  padding: 8rem;
+}
+
+.ma-1 {
+  margin: 1rem 0;
+}
+
+.ma-2 {
+  margin: 2rem 0;
+}
+
+.ma-3 {
+  margin: 3rem 0;
+}
+
+.ma-4 {
+  margin: 4rem 0;
+}
+
+.all-sides-ma-0 {
+  margin: 0;
+}
+
+.all-sides-ma-1 {
+  margin: 0.25rem;
+}
+
+.all-sides-ma-2 {
+  margin: 0.5rem;
+}
+
+.all-sides-ma-3 {
+  margin: 1rem;
+}
+
+.all-sides-ma-4 {
+  margin: 2rem;
+}
+
+.all-sides-ma-5 {
+  margin: 4rem;
+}
+
+.all-sides-ma-6 {
+  margin: 8rem;
+}
+
+.all-sides-ma-7 {
+  margin: 16rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.shadow-1 {
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-2 {
+  box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-3 {
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-4 {
+  box-shadow: 2px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.shadow-5 {
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.opacity-10 {
+  opacity: 1;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-05 {
+  opacity: 0.05;
+}
+
+.opacity-025 {
+  opacity: 0.025;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 body {
@@ -188,6 +376,94 @@ body {
   100% {
     width: 100%;
   }
+}
+
+/*responsive*/
+@media (max-width: 1170px) {
+  .slider .slider-items .item .caption {
+    padding: 15px 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider .controls .prev {
+    left: 10px;
+  }
+  slider .controls .prev {
+    right: 10px;
+  }
+  .slider .slider-items .item .caption {
+    padding: 15px 70px;
+  }
+  .slider .slider-items .item .caption .text h1 {
+    font-size: 30px;
+  }
+  .slider .slider-items .item .caption .text p {
+    font-size: 16px;
+  }
+}
+
+.ital {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.capit {
+  text-transform: capitalize;
+}
+
+.up {
+  text-transform: uppercase;
+}
+
+.low {
+  text-transform: lowercase;
+}
+
+.code {
+  font-family: Consolas, "courier new";
+  padding: 2px;
+  font-size: 105%;
+}
+
+.cite {
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.line {
+  text-decoration: line-through !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.font-1 {
+  font-size: 5rem;
+}
+
+.font-2 {
+  font-size: 3rem;
+}
+
+.font-3 {
+  font-size: 1.5rem;
+}
+
+.font-4 {
+  font-size: 1.25rem;
+}
+
+.font-5 {
+  font-size: 1rem;
+}
+
+.font-6 {
+  font-size: 0.875rem;
 }
 
 .displayGrid {
