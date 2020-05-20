@@ -187,6 +187,10 @@
   }
 }
 // TYPE FACES
+
+.default {
+  font-family: "Dosis", Helvetica, sans-serif;
+}
 .sans-serif {
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
     helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
@@ -229,51 +233,3 @@
 .courier {
   font-family: "Courier Next", courier, monospace;
 }
-
-// @media (--breakpoint-not-small) {
-//   .lh-solid-ns {
-//     line-height: var(--line-height-solid);
-//   }
-//   .lh-title-ns {
-//     line-height: var(--line-height-title);
-//   }
-//   .lh-copy-ns {
-//     line-height: var(--line-height-copy);
-//   }
-// }
-
-// @media (--breakpoint-medium) {
-//   .lh-solid-m {
-//     line-height: var(--line-height-solid);
-//   }
-//   .lh-title-m {
-//     line-height: var(--line-height-title);
-//   }
-//   .lh-copy-m {
-//     line-height: var(--line-height-copy);
-//   }
-// }
-
-// @media (--breakpoint-large) {
-//   .lh-solid-l {
-//     line-height: var(--line-height-solid);
-//   }
-//   .lh-title-l {
-//     line-height: var(--line-height-title);
-//   }
-//   .lh-copy-l {
-//     line-height: var(--line-height-copy);
-//   }
-// }
-
-// @media screen and (min-width: 30em) and (max-width: 60em) {
-//   .f4-m {
-//     font-size: 1.25rem;
-//   }
-// }
-
-// @media screen and (min-width: 60em) {
-//   .f3-l {
-//     font-size: 1.5rem;
-//   }
-// }
