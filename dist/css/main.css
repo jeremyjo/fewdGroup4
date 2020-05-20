@@ -224,7 +224,6 @@ h1 {
 }
 
 .fragment {
-  margin: 0;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -690,5 +689,13 @@ i {
     grid-template-rows: 1fr;
     grid-template-columns: auto;
   }
+}
+
+.Main-blue {
+  color: #a1a9fe;
+}
+
+.Main-black {
+  color: #383838;
 }
 /*# sourceMappingURL=main.css.map */
