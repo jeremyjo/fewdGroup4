@@ -33,7 +33,7 @@ i.fas.fa-bars {
 
 // navbar <li> styling
 .navbarLI {
-    border: 1px solid black;
+    border: 1px solid $mainBlack;
 }
 
 .activeLI {
@@ -42,7 +42,7 @@ i.fas.fa-bars {
 }
 
 .whiteText {
-    color: #fff;
+    color: $mainWhite;
 }
 
 // landscape media query
