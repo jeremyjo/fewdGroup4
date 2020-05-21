@@ -698,4 +698,22 @@ i {
 .Main-black {
   color: #383838;
 }
+
+.float-l {
+  float: left;
+}
+
+.float-r {
+  float: right;
+}
+
+.float-n {
+  float: none;
+}
+
+.clearFix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 /*# sourceMappingURL=main.css.map */
