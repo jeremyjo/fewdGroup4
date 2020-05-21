@@ -11,70 +11,74 @@
     <link href="../css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="slider">
-      <div class="slider-items">
-        <div class="item active">
-          <div
-            class="img"
-            style="background-image: url('../images/tea11.png');"
-            ;
-          ></div>
-          <div class="caption">
-            <div class="text">
-              <h1>Name of the business</h1>
-              <p>Discription of the vendor</p>
+    <div class="fragment all-sides-ma-0">
+      <!--fragment-->
+      <div class="slider">
+        <div class="slider-items">
+          <div class="item active">
+            <div
+              class="img"
+              style="background-image: url('../images/tea11.png');"
+              ;
+            ></div>
+            <div class="caption">
+              <div class="text">
+                <h1>Name of the business</h1>
+                <p>Description of the vendor</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="img"
+              style="background-image: url('../images/tea2.png');"
+              ;
+            ></div>
+            <div class="caption">
+              <div class="text">
+                <h1>Name of the business</h1>
+                <p>Description of the vendor</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div
+              class="img"
+              style="background-image: url('../images/coffee.png');"
+              ;
+            ></div>
+            <div class="caption all-sides-pa-3">
+              <div class="text">
+                <h1>Name of the business</h1>
+                <p>Description of the vendor</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <div
-            class="img"
-            style="background-image: url('../images/tea2.png');"
-            ;
-          ></div>
-          <div class="caption">
-            <div class="text">
-              <h1>Name of the business</h1>
-              <p>Discription of the vendor</p>
-            </div>
+
+        <!-- Slider controls -->
+
+        <div class="controls">
+          <div class="prev"><</div>
+          <div class="next">></div>
+        </div>
+        <!-- /Slider controls  -->
+
+        <!--Slide info-->
+        <div class="slide-info">
+          <div class="meter">
+            <div class="inner"></div>
           </div>
+          <div class="number"></div>
         </div>
-        <div class="item">
-          <div
-            class="img"
-            style="background-image: url('../images/coffee.png');"
-            ;
-          ></div>
-          <div class="caption">
-            <div class="text">
-              <h1>Name of the business</h1>
-              <p>Discription of the vendor</p>
-            </div>
-          </div>
-        </div>
+        <!--/Slide info-->
+
+        <!--Next slide progress meter-->
+        <div class="progress"></div>
+        <!--/Next slide progress meter-->
       </div>
-
-      <!-- Slider controls -->
-
-      <div class="controls">
-        <div class="prev"><</div>
-        <div class="next">></div>
-      </div>
-      <!-- /Slider controls  -->
-
-      <!--Slide info-->
-      <div class="slide-info">
-        <div class="meter">
-          <div class="inner"></div>
-        </div>
-        <div class="number"></div>
-      </div>
-      <!--/Slide info-->
-
-      <!--Next slide progress meter-->
-      <div class="progress"></div>
-      <!--/Next slide progress meter-->
+      <script src="../script/slideShow.js"></script>
     </div>
-    <script src="../script/slideShow.js"></script>
+    <!--/fragment-->
   </body>
 </html>
