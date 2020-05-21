@@ -141,6 +141,7 @@ h1 {
 
 .text-left {
   text-align: left;
+
 }
 
 .text-right {
@@ -223,11 +224,8 @@ h1 {
   opacity: 0;
 }
 
-body {
+.fragment {
   overflow-x: hidden;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -276,7 +274,6 @@ body {
   z-index: 10;
   margin: auto;
   flex-grow: 1;
-  padding: 15px;
 }
 
 .slider .slider-items .item .caption h1 {
@@ -466,6 +463,177 @@ body {
   font-size: 0.875rem;
 }
 
+.MaxW {
+  max-width: 30em;
+}
+
+.MaxW-wide {
+  max-width: 34em;
+}
+
+.MaxW-narrow {
+  max-width: 20em;
+}
+
+.fontW-1 {
+  font-weight: 100;
+}
+
+.fontW-2 {
+  font-weight: 200;
+}
+
+.fontW-3 {
+  font-weight: 300;
+}
+
+.fontW-4 {
+  font-weight: 400;
+}
+
+.fontW-5 {
+  font-weight: 500;
+}
+
+.fontW-6 {
+  font-weight: 600;
+}
+
+.fontW-7 {
+  font-weight: 700;
+}
+
+.fontW-8 {
+  font-weight: 800;
+}
+
+.fontW-9 {
+  font-weight: 900;
+}
+
+.lHeight-consolid {
+  line-height: 1;
+}
+
+.lHeight-title {
+  line-height: 1.25;
+}
+
+.lHeight-copy {
+  line-height: 1.5;
+}
+
+.border-l {
+  border-left-style: solid;
+  border-left-width: 1px;
+}
+
+.border-r {
+  border-right-style: solid;
+  border-right-width: 1px;
+}
+
+.border-blue {
+  border-color: #a1a9fe;
+}
+
+.blockquate {
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 2rem;
+  color: #383838;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-width: 0.25rem;
+  border-color: #a1a9fe;
+}
+
+.blockquate-p {
+  font-size: 1.5rem;
+  line-height: 1;
+  max-width: 30em;
+  margin-top: 0;
+}
+
+.blockquate-c {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  font-style: normal;
+}
+
+.list-non {
+  list-style-type: none;
+}
+
+.list-fun {
+  list-style-type: "\1F44D";
+}
+
+.list-sq {
+  list-style-type: square;
+}
+
+.list-cir {
+  list-style-type: circle;
+}
+
+.default {
+  font-family: "Dosis", Helvetica, sans-serif;
+}
+
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
+
+.helvetica {
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+
+.avenir {
+  font-family: "avenir next", avenir, sans-serif;
+}
+
+.serif {
+  font-family: georgia, times, serif;
+}
+
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+
+.georgia {
+  font-family: georgia, serif;
+}
+
+.times {
+  font-family: times, serif;
+}
+
+.bodoni {
+  font-family: "Bodoni MT", serif;
+}
+
+.calisto {
+  font-family: "Calisto MT", serif;
+}
+
+.garamond {
+  font-family: garamond, serif;
+}
+
+.baskerville {
+  font-family: baskerville, serif;
+}
+
+.code {
+  font-family: Consolas, monaco, monospace;
+}
+
+.courier {
+  font-family: "Courier Next", courier, monospace;
+}
+
 .displayGrid {
   display: grid;
 }
@@ -522,5 +690,13 @@ i {
     grid-template-rows: 1fr;
     grid-template-columns: auto;
   }
+}
+
+.Main-blue {
+  color: #a1a9fe;
+}
+
+.Main-black {
+  color: #383838;
 }
 /*# sourceMappingURL=main.css.map */
