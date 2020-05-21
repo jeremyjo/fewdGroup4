@@ -28,6 +28,7 @@ i.fas.fa-bars {
 
     & li a {
         display: block;
+        color: $body-font;
     }
 }
 
@@ -42,7 +43,7 @@ i.fas.fa-bars {
 }
 
 .whiteText {
-    color: $mainWhite;
+    color: $mainWhite !important;
 }
 
 // landscape media query
@@ -101,7 +102,7 @@ i.fas.fa-bars {
         }
         & a:hover:after {
             width: 30%;
-            border-bottom-color: $navbarBackground
+            // border-bottom-color: $navbarBackground
         }
     }
 

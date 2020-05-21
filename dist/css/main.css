@@ -490,10 +490,11 @@ i.fas.fa-bars {
 
 .navbarUL li a {
   display: block;
+  color: #383838;
 }
 
 .navbarLI {
-  border: 1px solid black;
+  border: 1px solid #383838;
 }
 
 .activeLI {
@@ -502,7 +503,7 @@ i.fas.fa-bars {
 }
 
 .whiteText {
-  color: #fff;
+  color: #ffffff !important;
 }
 
 @media screen and (min-width: 376px) and (max-height: 375px) {
@@ -548,7 +549,6 @@ i.fas.fa-bars {
   }
   .navbarUL li a:hover:after {
     width: 30%;
-    border-bottom-color: #A7D7C7;
   }
 }
 /*# sourceMappingURL=main.css.map */
