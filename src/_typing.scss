@@ -13,12 +13,10 @@
 .low {
   text-transform: lowercase;
 }
-
-.code {
-  font-family: Consolas, "courier new";
-  padding: 2px;
-  font-size: 105%;
+.text-trans-none {
+  text-transform: none !important;
 }
+
 .cite {
   font-style: italic;
   font-family: fantasy;
@@ -107,21 +105,6 @@
   &-copy {
     line-height: 1.5;
   }
-}
-
-.border {
-  &-l {
-    border-left-style: solid;
-    border-left-width: 1px;
-  }
-  &-r {
-    border-right-style: solid;
-    border-right-width: 1px;
-  }
-}
-
-.border-blue {
-  border-color: $primaryColor;
 }
 
 //quotes
@@ -213,21 +196,127 @@
 .times {
   font-family: times, serif;
 }
-.bodoni {
-  font-family: "Bodoni MT", serif;
-}
-.calisto {
-  font-family: "Calisto MT", serif;
-}
-.garamond {
-  font-family: garamond, serif;
-}
+// .bodoni {
+//   font-family: "Bodoni MT", serif;
+// }
+// .calisto {
+//   font-family: "Calisto MT", serif;
+// }
+// .garamond {
+//   font-family: garamond, serif;
+// }
 .baskerville {
   font-family: baskerville, serif;
 }
+// .code {
+//   font-family: Consolas, monaco, monospace;
+// }
+
 .code {
-  font-family: Consolas, monaco, monospace;
+  font-family: Consolas, "courier new";
+  padding: 2px;
+  font-size: 105%;
 }
 .courier {
   font-family: "Courier Next", courier, monospace;
+}
+// BORDERS
+
+.b {
+  &-default {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  &-top {
+    border-top-style: solid;
+    border-top-width: 1px;
+  }
+
+  &-right {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
+  &-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+  }
+  &-left {
+    border-left-style: solid;
+    border-left-width: 1px;
+  }
+  &-none {
+    border-style: none;
+    border-width: 0;
+  }
+  &-dotted {
+    border-style: dotted;
+  }
+  &-dashed {
+    border-style: dashed;
+  }
+
+  //border-colors
+
+  &-blue {
+    border-color: $primaryColor;
+  }
+  &-white {
+    border-color: $mainWhite;
+  }
+  &-light-gray {
+    border-color: $secGray;
+  }
+}
+
+// padding - brackpoints for small width
+
+@media screen and (min-width: 30em) {
+  .Sm-pad {
+    &-0 {
+      //none
+      padding: 0rem;
+    }
+    &-1 {
+      padding: 0.5px;
+    }
+    &-2 {
+      padding: 1rem;
+    }
+    &-3 {
+      padding: 2rem;
+    }
+    &-4 {
+      padding: 4rem;
+    }
+    &-5 {
+      padding: 8rem;
+    }
+    &-6 {
+      padding: 16rem;
+    }
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 60em) {
+  .Sm-font {
+    &-2 {
+      font-size: 2.25rem;
+    }
+
+    &-4 {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .Med-font {
+    &-1 {
+      font-size: 3rem;
+    }
+
+    &-3 {
+      font-size: 1.5rem;
+    }
+  }
 }
