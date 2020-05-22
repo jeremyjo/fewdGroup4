@@ -596,7 +596,7 @@ i {
 }
 
 body {
-  background: #2196F3;
+  background: #a1a9fe;
   margin: 0 10px;
 }
 
@@ -658,6 +658,10 @@ body {
   position: relative;
 }
 
+.icon-relative .fas, .fa-credit-card, .fa-calendar-alt {
+  text-align: left;
+}
+
 .icon-relative .fas,
 .icon-relative .far {
   position: absolute;
@@ -669,7 +673,7 @@ body {
 
 .btn {
   margin-top: 40px;
-  background: #2196F3;
+  background: #19D5A5;
   padding: 12px;
   text-align: center;
   color: #f8f8f8;
