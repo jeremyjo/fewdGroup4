@@ -965,6 +965,7 @@ html {
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
   z-index: 2;
+  visibility: hidden;
 }
 
 .cart {
@@ -979,6 +980,8 @@ html {
   padding: 1.5rem;
   -webkit-transition: var(--mainTransition);
   transition: var(--mainTransition);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .showCart {
