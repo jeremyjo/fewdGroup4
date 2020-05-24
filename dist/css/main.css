@@ -523,4 +523,26 @@ i {
     grid-template-columns: auto;
   }
 }
+
+table {
+  width: 50%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.50rem;
+}
+
+.tableLeftAlign {
+  text-align: left;
+}
+
+.centerGroup {
+  margin: 1em auto;
+}
+
+.striped table tr:nthchild(even) {
+  background-color: red;
+}
 /*# sourceMappingURL=main.css.map */
