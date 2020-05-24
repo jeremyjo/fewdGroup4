@@ -2,8 +2,8 @@ const slides = document.querySelector(".slider-items").children;
 
 const slideItems = document.querySelector(".slider-items");
 
-const prev = document.querySelector(".prev");
-const next = document.querySelector(".next");
+const prev = document.querySelector(".prevS");
+const next = document.querySelector(".nextS");
 
 // console.log(next);
 
@@ -12,17 +12,17 @@ let index = 0;
 const duration = 6000;
 
 prev.onclick = function () {
-  slide("prev");
+  slide("prevS");
 };
 
 next.onclick = function () {
-  slide("next");
+  slide("nextS");
 };
 
 function slide(direction) {
   progress();
   //   console.log(direction);
-  if (direction == "next") {
+  if (direction == "nextS") {
     if (index == totalSlides - 1) {
       //if index is equal to totalSlides
       //then index =0
@@ -36,7 +36,7 @@ function slide(direction) {
   //   console.log(totalSlides - 1 + " total-slides:");
   //totalSlides starting from 0; 0-1-2 slides
 
-  if (direction == "prev") {
+  if (direction == "prevS") {
     if (index == 0) {
       index = totalSlides - 1;
     } else {
@@ -65,14 +65,14 @@ let width = 100 / totalSlides;
 
 //slide info
 function slideInfo() {
-  document.querySelector(".number").innerHTML = index + 1 + "/" + totalSlides;
-  document.querySelector(".inner").style.width = (index + 1) * width + "%";
+  document.querySelector(".numberS").innerHTML = index + 1 + "/" + totalSlides;
+  document.querySelector(".innerS").style.width = (index + 1) * width + "%";
 }
 
 //next slide progress meter
 
 function progress() {
-  document.querySelector(".progress").innerHTML = "";
+  document.querySelector(".progressSlide").innerHTML = "";
   const div = document.createElement("div");
 
   div.style.width = "0px";
@@ -81,13 +81,13 @@ function progress() {
   div.style.top = "0";
   div.style.backgroundColor = "#a1a9fe";
   div.style.height = "5px";
-  div.id = "progress";
-  div.style.animation = "progress " + duration / 1000 + "s linear";
-  document.querySelector(".progress").appendChild(div);
+  div.id = "progressSlide";
+  div.style.animation = "progressSlide " + duration / 1000 + "s linear";
+  document.querySelector(".progressSlide").appendChild(div);
 }
 // auto slide
 function autoSlide() {
-  slide("next");
+  slide("nextS");
 }
 let timer = setInterval(autoSlide, duration);
 

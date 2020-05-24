@@ -10,14 +10,15 @@
   overflow: hidden;
   .slider-items {
     height: 100%;
-    .item {
+    .Oneitem {
       height: 100%;
       display: none;
       &.active {
         display: flex;
       }
 
-      .img {
+      .imgSlide {
+        max-width: 100%;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -35,7 +36,7 @@
           transform: scale(1.05);
         }
       }
-      .caption {
+      .captionSlide {
         position: relative;
         max-width: 1170px;
         z-index: 10;
@@ -68,9 +69,9 @@
     }
   }
 
-  .controls {
-    .prev,
-    .next {
+  .controlsSlide {
+    .prevS,
+    .nextS {
       position: absolute;
       height: 40px;
       width: 40px;
@@ -91,10 +92,10 @@
       }
     }
 
-    .prev {
+    .prevS {
       left: 30px;
     }
-    .next {
+    .nextS {
       right: 30px;
     }
   }
@@ -107,18 +108,18 @@
     bottom: 40px;
     background-color: $mainWhite;
     padding-right: 50px;
-    .meter {
+    .meterS {
       height: 5px;
       background-color: $mainGrey;
       width: 100%;
-      .inner {
+      .innerS {
         width: 0px;
         background-color: $primaryColor;
         transition: all 1s linear;
         height: 5px;
       }
     }
-    .number {
+    .numberS {
       position: absolute;
       right: 0px;
       top: 0px;
@@ -134,7 +135,7 @@
 
 // #progress {
 // }
-@keyframes progress {
+@keyframes progressSlide {
   0% {
     width: 0%;
   }
@@ -144,27 +145,33 @@
 }
 
 /*responsive*/
+
 @media (max-width: 1170px) {
-  .slider .slider-items .item .caption {
+  .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 100px;
   }
 }
 
 @media (max-width: 767px) {
-  .slider .controls .prev {
-    left: 10px;
+  .fragment {
+    display: none;
   }
 
-  slider .controls .prev {
-    right: 10px;
-  }
-  .slider .slider-items .item .caption {
-    padding: 15px 70px;
-    .text h1 {
-      font-size: 30px;
-    }
-    .text p {
-      font-size: 16px;
-    }
-  }
+  // uncomment this section if you want image appear on a mobile screen
+
+  // .slider .controls .prev {
+  //   left: 10px;
+  // }
+
+  // slider .controls .prev {
+  //   right: 10px;
+  // }
+  // .slider .slider-items .item .caption {
+  //   padding: 15px 70px;
+  //   .textS h1 {
+  //     font-size: 30px;
+  //   }
+  //   .textS p {
+  //     font-size: 16px;
+  //   }
 }
