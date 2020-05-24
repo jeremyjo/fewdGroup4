@@ -159,14 +159,18 @@
 
   // uncomment this section if you want image appear on a mobile screen
 
-  // .slider .controls .prev {
+  // .imgSlide {
+  //   max-width: 50%;
+  //   max-height: 50%;
+  // }
+  // .slider .controlsSlide .prevS {
   //   left: 10px;
   // }
 
-  // slider .controls .prev {
+  // .slider .controlsSlide .prevS {
   //   right: 10px;
   // }
-  // .slider .slider-items .item .caption {
+  // .slider .slider-items .Oneitem .captionSlide {
   //   padding: 15px 70px;
   //   .textS h1 {
   //     font-size: 30px;
@@ -174,4 +178,15 @@
   //   .textS p {
   //     font-size: 16px;
   //   }
+  // }
+  // .controlsSlide {
+  //   .prevS,
+  //   .nextS {
+  //     top: 80%;
+  //     margin-top: 20px;
+  //   }
+  // }
+  // .slide-info {
+  //   display: none;
+  // }
 }
