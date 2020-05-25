@@ -14,7 +14,7 @@ html{
   --mainBlack: #222;
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
+  // --mainTransition: all 0.3s linear;
 }
 * {
   margin: 0;
@@ -22,7 +22,9 @@ html{
   box-sizing: border-box;
 }
 .shopping{
-  color: var(--mainBlack);
+  // color: var(--mainBlack);
+  color : $primaryColor;
+  
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
 }
@@ -94,7 +96,8 @@ html{
     background: var(--primaryColor);
     color: var(--mainBlack);
     border: 1px solid var(--primaryColor);
-    transition: var(--mainTransition);
+    // transition: var(--mainTransition);
+    transition: $mainTransition;
     cursor: pointer;
   }
   .banner-btn:hover {

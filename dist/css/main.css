@@ -746,7 +746,6 @@ html {
   --mainBlack: #222;
   --mainGrey: #ececec;
   --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
 }
 
 * {
@@ -757,7 +756,7 @@ html {
 }
 
 .shopping {
-  color: var(--mainBlack);
+  color: #a1a9fe;
   background: var(--mainWhite);
   font-family: "Lato", sans-serif;
 }
@@ -856,8 +855,8 @@ html {
   background: var(--primaryColor);
   color: var(--mainBlack);
   border: 1px solid var(--primaryColor);
-  -webkit-transition: var(--mainTransition);
-  transition: var(--mainTransition);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   cursor: pointer;
 }
 
