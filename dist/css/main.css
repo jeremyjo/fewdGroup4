@@ -408,6 +408,12 @@ h1 {
 }
 
 /*responsive*/
+@media (max-width: 1700px) {
+  .slider .slider-items .Oneitem .captionSlide {
+    padding: 50px 200px;
+  }
+}
+
 @media (max-width: 1170px) {
   .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 100px;
@@ -427,6 +433,7 @@ h1 {
   }
   .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 70px;
+    margin: 50% 40px;
   }
   .slider .slider-items .Oneitem .captionSlide .textS h1 {
     font-size: 30px;
@@ -434,10 +441,10 @@ h1 {
   .slider .slider-items .Oneitem .captionSlide .textS p {
     font-size: 16px;
   }
-  .controlsSlide .prevS,
-  .controlsSlide .nextS {
-    top: 80%;
-    margin-top: 20px;
+  .slider .controlsSlide .prevS,
+  .slider .controlsSlide .nextS {
+    top: 50%;
+    margin-top: -90px;
   }
   .slide-info {
     display: none;
@@ -954,5 +961,10 @@ i {
 .BTN-4:active {
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
+}
+
+.resp-image {
+  max-width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */

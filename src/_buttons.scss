@@ -1,4 +1,3 @@
-// f6 link dim ph3 pv2 mb2 dib white bg-black
 .BTN-1 {
   text-decoration: none;
   border-style: none;
@@ -28,8 +27,6 @@
   }
 }
 
-// f6 grow no-underline br-pill ba bw2 ph3 pv2 mb2 dib dark-green
-
 .BTN-2 {
   text-decoration: none;
   transform: translateZ(0);
@@ -45,7 +42,7 @@
   display: inline-block;
   border-color: $primaryColor-font;
   color: $primaryColor-font;
-  //   background-color: $prim-opac;
+
   cursor: pointer;
   &:hover,
   &:focus {
