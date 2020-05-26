@@ -1069,18 +1069,6 @@ table.stripes tr:nth-child(even) {
   background-color: #aaa;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-  background: #a1a9fe;
-  margin: 0 10px;
-}
-
 .payment {
   background: #f8f8f8;
   max-width: 360px;
@@ -1135,7 +1123,9 @@ body {
   position: relative;
 }
 
-.icon-relative .fas, .fa-credit-card, .fa-calendar-alt {
+.icon-relative .fas,
+.fa-credit-card,
+.fa-calendar-alt {
   text-align: left;
 }
 
@@ -1179,14 +1169,14 @@ body {
   left: 5px;
   width: 90px;
   height: 90px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 50%;
 }
 
 .payment-logo p {
   position: relative;
   color: #f8f8f8;
-  font-family: 'Baloo Bhaijaan', cursive;
+  font-family: "Baloo Bhaijaan", cursive;
   font-size: 58px;
 }
 

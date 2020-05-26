@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu");
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "Ubuntu", sans-serif;
+// }
 
-body{
-  background:$primaryColor;
-  margin: 0 10px;
-}
+// body {
+//   background:$primaryColor;
+//   margin: 0 10px;
+// }
 
-.payment{
+.payment {
   background: #f8f8f8;
   max-width: 360px;
   margin: 80px auto;
@@ -23,20 +23,20 @@ body{
   position: relative;
 }
 
-.payment h2{
+.payment h2 {
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 40px;
   color: #0d3c61;
 }
 
-.form .label{
+.form .label {
   display: block;
   color: #555555;
   margin-bottom: 6px;
 }
 
-.input{
+.input {
   padding: 13px 0px 13px 25px;
   width: 100%;
   text-align: center;
@@ -49,27 +49,29 @@ body{
   color: #555555;
 }
 
-.card-grp{
+.card-grp {
   display: flex;
   justify-content: space-between;
 }
 
-.card-item{
+.card-item {
   width: 48%;
 }
 
-.space{
+.space {
   margin-bottom: 20px;
 }
 
-.icon-relative{
+.icon-relative {
   position: relative;
 }
-.icon-relative .fas , .fa-credit-card,.fa-calendar-alt{
+.icon-relative .fas,
+.fa-credit-card,
+.fa-calendar-alt {
   text-align: left;
 }
 .icon-relative .fas,
-.icon-relative .far{
+.icon-relative .far {
   position: absolute;
   bottom: 12px;
   left: 15px;
@@ -77,7 +79,7 @@ body{
   color: #555555;
 }
 
-.btn{
+.btn {
   margin-top: 40px;
   background: $header;
   padding: 12px;
@@ -87,8 +89,7 @@ body{
   cursor: pointer;
 }
 
-
-.payment-logo{
+.payment-logo {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -97,39 +98,38 @@ body{
   height: 100px;
   background: #f8f8f8;
   border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   text-align: center;
   line-height: 85px;
 }
 
-.payment-logo:before{
+.payment-logo:before {
   content: "";
   position: absolute;
   top: 5px;
   left: 5px;
   width: 90px;
   height: 90px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 50%;
 }
 
-.payment-logo p{
+.payment-logo p {
   position: relative;
   color: #f8f8f8;
-  font-family: 'Baloo Bhaijaan', cursive;
+  font-family: "Baloo Bhaijaan", cursive;
   font-size: 58px;
 }
 
-
-@media screen and (max-width: 420px){
-  .card-grp{
+@media screen and (max-width: 420px) {
+  .card-grp {
     flex-direction: column;
   }
-  .card-item{
+  .card-item {
     width: 100%;
     margin-bottom: 20px;
   }
-  .btn{
+  .btn {
     margin-top: 20px;
   }
 }
