@@ -43,6 +43,12 @@ if (navbarLI.length) {
     });
 }
 
+navbarLI.forEach( function(li) {
+    if(li.classList.contains("activeLI")) {
+        li.firstChild.classList.add("whiteText");
+    }
+});
+
 mobilePortrait.addListener(fnMobilePortrait);
 
 // adds listener to the landscape media query. note executes both going to and coming out of landscape mode
@@ -50,6 +56,8 @@ landscape.addListener(fnLandscape);
 
 // adds listener to the tablet media query. note executes both going to and coming out of landscape mode
 tablet.addListener(fnTablet);
+
+desktop.addListener(fnDesktop);
 
 // ============ function definitions: =================== //
 function fnMobilePortrait(event) {
@@ -94,10 +102,15 @@ function fnLandscape(event){
 
 }           // end of fnLandscape()
 
-function fnTablet (event) {
+function fnTablet(event) {
     event.preventDefault();
     console.log ("funTablet");
 
     navbarUL.classList.remove("vanish");
     navbarUL.classList.add("displayGrid");
+}
+
+function fnDesktop(event) {
+    event.preventDefault();
+    
 }
