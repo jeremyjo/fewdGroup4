@@ -1,9 +1,6 @@
-body {
-  //   margin: 0;
+.fragment {
+  // margin: 0;
   overflow-x: hidden;
-}
-
-* {
   box-sizing: border-box;
 }
 
@@ -13,14 +10,15 @@ body {
   overflow: hidden;
   .slider-items {
     height: 100%;
-    .item {
+    .Oneitem {
       height: 100%;
       display: none;
       &.active {
         display: flex;
       }
 
-      .img {
+      .imgSlide {
+        max-width: 100%;
         height: 100%;
         width: 100%;
         position: absolute;
@@ -38,13 +36,13 @@ body {
           transform: scale(1.05);
         }
       }
-      .caption {
+      .captionSlide {
         position: relative;
         max-width: 1170px;
         z-index: 10;
         margin: auto;
         flex-grow: 1;
-        padding: 15px;
+        // padding: 15px;
         h1 {
           margin: 0;
           font-size: 50px;
@@ -71,9 +69,9 @@ body {
     }
   }
 
-  .controls {
-    .prev,
-    .next {
+  .controlsSlide {
+    .prevS,
+    .nextS {
       position: absolute;
       height: 40px;
       width: 40px;
@@ -94,10 +92,10 @@ body {
       }
     }
 
-    .prev {
+    .prevS {
       left: 30px;
     }
-    .next {
+    .nextS {
       right: 30px;
     }
   }
@@ -110,18 +108,18 @@ body {
     bottom: 40px;
     background-color: $mainWhite;
     padding-right: 50px;
-    .meter {
+    .meterS {
       height: 5px;
       background-color: $mainGrey;
       width: 100%;
-      .inner {
+      .innerS {
         width: 0px;
         background-color: $primaryColor;
         transition: all 1s linear;
         height: 5px;
       }
     }
-    .number {
+    .numberS {
       position: absolute;
       right: 0px;
       top: 0px;
@@ -137,7 +135,7 @@ body {
 
 // #progress {
 // }
-@keyframes progress {
+@keyframes progressSlide {
   0% {
     width: 0%;
   }
@@ -147,27 +145,48 @@ body {
 }
 
 /*responsive*/
+
 @media (max-width: 1170px) {
-  .slider .slider-items .item .caption {
+  .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 100px;
   }
 }
 
 @media (max-width: 767px) {
-  .slider .controls .prev {
+  // .fragment {
+  //   display: none;
+  // }
+
+  // uncomment this section if you want image appear on a mobile screen
+
+  .imgSlide {
+    max-width: 50%;
+    max-height: 50%;
+  }
+  .slider .controlsSlide .prevS {
     left: 10px;
   }
 
-  slider .controls .prev {
+  .slider .controlsSlide .prevS {
     right: 10px;
   }
-  .slider .slider-items .item .caption {
+  .slider .slider-items .Oneitem .captionSlide {
     padding: 15px 70px;
-    .text h1 {
+    .textS h1 {
       font-size: 30px;
     }
-    .text p {
+    .textS p {
       font-size: 16px;
     }
+  }
+  .controlsSlide {
+    .prevS,
+    .nextS {
+      top: 80%;
+      margin-top: 20px;
+    }
+  }
+  .slide-info {
+    display: none;
   }
 }

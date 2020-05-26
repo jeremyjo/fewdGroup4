@@ -1,0 +1,26 @@
+.Main {
+  &-blue {
+    color: $primaryColor;
+  }
+  &-black {
+    color: $mainBlack;
+  }
+  &-white {
+    color: $mainWhite;
+  }
+}
+
+.Sec {
+  &-blue {
+    color: $primaryColor-font;
+  }
+  &-black {
+    color: $mainBlack;
+  }
+  &-white {
+    color: $secWhite;
+  }
+  &-gray {
+    color: $secGray;
+  }
+}
