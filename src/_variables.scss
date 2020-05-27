@@ -11,22 +11,17 @@ $prim-opac: #d1d5ff;
 $secWhite: #f4f4f4;
 $secGray: #ccc;
 
+$formGray: #616060;
 //body
 
 $body-font: $mainBlack;
 $color-backgrounds: $mainGrey;
 
-$hamburgerMenu: #19D5A5;
-$navbarBackground: #A7D7C7;
+$hamburgerMenu: #19d5a5;
+$navbarBackground: #a7d7c7;
 $header: #19d5a5;
 
 //default font
 $font-main: "Dosis", Helvetica, sans-serif;
 
-.primaryColor {
-  color: $primaryColor;
-}
-
-.primDark {
-  color: darken($primaryColor, $amount: 10%);
-}
+// form colors
