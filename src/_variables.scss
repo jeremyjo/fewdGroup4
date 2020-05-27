@@ -24,4 +24,19 @@ $header: #19d5a5;
 //default font
 $font-main: "Dosis", Helvetica, sans-serif;
 
-// form colors
+.primaryColor {
+  color: $primaryColor;
+}
+
+.primDark {
+  color: darken($primaryColor, $amount: 10%);
+}
+
+// shopping cart sass
+
+$mainTransition: all 0.3s linear;
+// $primaryColor: #f09d51;
+$mainWhite: #fff;
+$mainBlack: #222;
+$mainGrey: #ececec;
+$mainSpacing: 0.1rem;
