@@ -1,0 +1,462 @@
+// body {
+//     background-color: $mainGrey;
+// }
+
+// IDs for buttons and button options.  Be sure to let me know if you want more options!
+#push {
+  background-color: $header;
+  display: block;
+  border-radius: 20%;
+  font-family: $font-main;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  color: $mainBlack;
+  box-shadow: 10px 10px 10px $mainGrey;
+}
+
+#push:hover {
+  background-color: #e62a5a;
+  color: $mainWhite;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px $mainBlack;
+}
+
+#push:active {
+  background-color: orange;
+  color: purple;
+}
+
+#pull {
+  background-color: $primaryColor;
+  display: block;
+  border-radius: 20%;
+  font-family: $font-main;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  color: $mainWhite;
+  box-shadow: 10px 10px 10px $mainGrey;
+}
+
+#pull:hover {
+  background-color: #5e5601;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px $mainBlack;
+}
+
+#pull:active {
+  background-color: orange;
+  color: purple;
+}
+
+#night {
+  background-color: $mainBlack;
+  display: block;
+  border-radius: 20%;
+  font-family: $font-main;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  color: $mainWhite;
+  box-shadow: 10px 10px 10px $mainGrey;
+}
+
+#night:hover {
+  background-color: $mainWhite;
+  color: $mainBlack;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px $mainBlack;
+}
+
+#night:active {
+  background-color: orange;
+  color: purple;
+}
+
+#day {
+  background-color: $mainWhite;
+  display: block;
+  border-radius: 20%;
+  font-family: $font-main;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 0.8em;
+  color: $mainBlack;
+  box-shadow: 10px 10px 10px $mainGrey;
+}
+
+#day:hover {
+  background-color: $mainBlack;
+  color: $mainWhite;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px $mainBlack;
+}
+
+#day:active {
+  background-color: orange;
+  color: purple;
+}
+.container_ {
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $mainGrey;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Keeps the content compartmentalized
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 860px;
+  }
+}
+
+// The left portion of the product information site
+.productBackground {
+  width: 100%;
+  height: 595px;
+  background-color: $header;
+  position: relative;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
+    0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
+  i {
+    font-size: 1.3em;
+    margin-top: 13px;
+  }
+  @media (min-width: 435px) {
+    height: 100vh;
+    .product {
+      height: 60%;
+      width: 100%;
+    }
+  }
+  @media (min-width: 768px) {
+    height: 770px;
+    width: 120%;
+  }
+}
+
+// Colors of the left side
+.colors {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+  .gradient[color="blue"] {
+    background-image: linear-gradient(45deg, #0136af, #22abfa);
+  }
+  .gradient[color="red"] {
+    background-image: linear-gradient(45deg, #d62926, #ee625f);
+  }
+  .gradient[color="yellow"] {
+    background-image: linear-gradient(45deg, #ffd400, #ffffb7);
+  }
+  .gradient[color="green"] {
+    background-image: linear-gradient(45deg, #11998e, #1ce669);
+  }
+  .gradient[color="purple"] {
+    background-image: linear-gradient(45deg, #552586, #b589d6);
+  }
+}
+
+.first {
+  z-index: 0;
+  animation: 1s width ease;
+}
+
+@keyframes width {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.second {
+  z-index: -1;
+}
+
+// The right side of the product information page
+.info {
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  padding: 35px 40px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1),
+    0 15px 35px rgba(0, 0, 0, 0.1);
+  @media (min-width: 768px) {
+    height: 770px;
+  }
+}
+
+// Image setting for logos
+.logo {
+  position: absolute;
+  color: $mainWhite;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+  @media (min-width: 435px) {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.5);
+  color: $mainBlack;
+}
+
+// The share "button"/icon
+.share {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: $mainWhite;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+i {
+  line-height: 50px;
+  color: $primaryColor;
+}
+.share:hover {
+  transform: scale(1.5);
+  background-color: $mainBlack;
+}
+
+// The product title on the left side of the page
+.productTitle {
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.3;
+  font-size: 4em;
+  @media (min-width: 375px) {
+    left: 23px;
+    font-size: 5em;
+  }
+  @media (min-width: 425px) {
+    left: 37px;
+    top: 150px;
+    font-size: 5.5em;
+  }
+  @media (min-width: 768px) {
+    top: 140px;
+    left: 30px;
+    font-size: 5.9em;
+  }
+  @media (min-width: 1440px) {
+    font-size: 6.15em;
+    left: 15px;
+  }
+}
+
+// This is the image tag for products being sold!
+.product {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+}
+.show {
+  opacity: 1;
+}
+
+.productlimit {
+  width: 100%;
+  height: auto;
+}
+
+// The product name on the right side of the page
+.productName {
+  padding: 0 0 10px 0;
+}
+div {
+  display: flex;
+  align-items: center;
+  .big {
+    margin-right: 10px;
+    font-size: 2rem;
+    color: #333;
+  }
+  .new {
+    background-color: $primaryColor;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
+  .etc {
+    font-weight: 500;
+    color: #444;
+    margin-top: 3px;
+    text-transform: capitalize;
+  }
+}
+
+// Stuff on  the right side of the page
+.productName,
+.description,
+.color-container,
+.quantity {
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+}
+
+// Where you put the description
+.description {
+  padding: 10px 0;
+}
+
+// The h3 tags on the right
+.etc {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+// The minor text in the description
+.text {
+  color: #555;
+  font-size: 17px;
+  text-indent: 35px;
+}
+
+// Where you can choose the color options for the picture
+.color-container {
+  padding: 10px 0;
+}
+.colorChoice {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  .color {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: 5px solid;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .color[color="blue"] {
+    background-color: #0136af;
+    border-color: #0136af;
+  }
+  .color[color="red"] {
+    background-color: #d62926;
+    border-color: #d62926;
+  }
+  .color[color="yellow"] {
+    background-color: #ffd400;
+    border-color: #ffd400;
+  }
+  .color[color="green"] {
+    background-color: #11998e;
+    border-color: #11998e;
+  }
+  .color[color="purple"] {
+    background-color: #552586;
+    border-color: #552586;
+  }
+  .active {
+    border-color: #fff;
+    box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.3);
+  }
+}
+
+// Involves quantity options
+.quantity {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dadada;
+  input {
+    width: 100%;
+    height: 35px;
+    font-size: 2em;
+    text-align: center;
+    font-family: $font-main;
+  }
+}
+
+// Shows the price and checkout "button"/icon
+.counterPrice {
+  padding-top: -5px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Self-explanatory
+.price {
+  color: #333;
+  display: flex;
+  h1 {
+    font-size: 3.1rem;
+    font-weight: bolder;
+    line-height: 1;
+  }
+  i {
+    font-size: 3.5rem;
+    color: #333;
+    margin-right: 15px;
+  }
+}
+
+// The "button"/icon you use to purchase stuff
+.buy {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  transition: 0.5s;
+  i {
+    margin-right: 1px;
+  }
+}
+.buy:hover {
+  transform: scale(1.3);
+}
