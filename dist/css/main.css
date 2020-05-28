@@ -2011,31 +2011,6 @@ table.stripes tr:nth-child(even) {
   color: #ffffff;
 }
 
-#pullPI {
-  background-color: #a1a9fe;
-  display: block;
-  border-radius: 10px;
-  font-family: "Dosis", Helvetica, sans-serif;
-  text-align: center;
-  padding: 10px 10px;
-  font-size: 1rem;
-  border: none;
-  color: #ffffff;
-  box-shadow: 10px 10px 10px #ececec;
-}
-
-#pullPI:hover {
-  background-color: #616060;
-  transform: scale(0.93);
-  transition: 0.5s;
-  box-shadow: 2px 2px 5px #616060;
-}
-
-#pullPI:active {
-  background-color: #383838;
-  color: #ffffff;
-}
-
 .containerPI {
   min-height: 125vh;
   display: flex;
@@ -2072,7 +2047,7 @@ table.stripes tr:nth-child(even) {
 .productBackground {
   width: 100%;
   height: 595px;
-  background-color: #81e4e8;
+  background-color: #a9edef;
   position: relative;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
 }
@@ -2124,7 +2099,7 @@ table.stripes tr:nth-child(even) {
 }
 
 .logoPI:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 @media (min-width: 435px) {
@@ -2201,8 +2176,14 @@ table.stripes tr:nth-child(even) {
   width: 100%;
   height: auto;
   opacity: 0;
-  bottom: 0;
+  bottom: 20%;
   right: 0;
+}
+
+@media (max-width: 715px) {
+  .productPI {
+    bottom: 20%;
+  }
 }
 
 .showPI {

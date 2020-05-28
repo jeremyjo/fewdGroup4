@@ -1,10 +1,3 @@
-// body {
-//     background-color: $mainGrey;
-// }
-
-// IDs for buttons and button options.  Be sure to let me know if you want more options!
-
-//Complete btn
 #pushPI {
   background-color: $green;
   display: block;
@@ -29,80 +22,7 @@
     color: $mainWhite;
   }
 }
-//RESET to Default btn
-#pullPI {
-  background-color: $primaryColor;
-  display: block;
-  border-radius: 10px;
-  font-family: $font-main;
-  text-align: center;
-  padding: 10px 10px;
-  font-size: 1rem;
-  border: none;
-  color: $mainWhite;
-  box-shadow: 10px 10px 10px $mainGrey;
-  &:hover {
-    background-color: $formGray;
-    transform: scale(0.93);
-    transition: 0.5s;
-    box-shadow: 2px 2px 5px $formGray;
-  }
 
-  &:active {
-    background-color: $mainBlack;
-    color: $mainWhite;
-  }
-}
-
-// #night {
-//   background-color: $mainBlack;
-//   display: block;
-//   border-radius: 20%;
-//   font-family: $font-main;
-//   text-align: center;
-//   padding: 10px 10px;
-//   font-size: 0.8em;
-//   color: $mainWhite;
-//   box-shadow: 10px 10px 10px $mainGrey;
-// }
-
-// #night:hover {
-//   background-color: $mainWhite;
-//   color: $mainBlack;
-//   transform: scale(0.93);
-//   transition: 0.5s;
-//   box-shadow: 2px 2px 5px $mainBlack;
-// }
-
-// #night:active {
-//   background-color: orange;
-//   color: purple;
-// }
-
-// #day {
-//   background-color: $mainWhite;
-//   display: block;
-//   border-radius: 20%;
-//   font-family: $font-main;
-//   text-align: center;
-//   padding: 10px 10px;
-//   font-size: 0.8em;
-//   color: $mainBlack;
-//   box-shadow: 10px 10px 10px $mainGrey;
-// }
-
-// #day:hover {
-//   background-color: $mainBlack;
-//   color: $mainWhite;
-//   transform: scale(0.93);
-//   transition: 0.5s;
-//   box-shadow: 2px 2px 5px $mainBlack;
-// }
-
-// #day:active {
-//   background-color: orange;
-//   color: purple;
-// }
 .containerPI {
   min-height: 125vh;
   display: flex;
@@ -135,7 +55,8 @@
 .productBackground {
   width: 100%;
   height: 595px;
-  background-color: $green;
+  background-color: $greenOPAC;
+
   position: relative;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
@@ -156,57 +77,6 @@
   }
 }
 
-// Colors of the left side
-// .colors {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   left: 0;
-//   top: 0;
-//   .gradient {
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     left: 0;
-//     top: 0;
-//     z-index: -2;
-//   }
-//   .gradient[color="blue"] {
-//     background-image: linear-gradient(45deg, #0136af, #22abfa);
-//   }
-//   .gradient[color="red"] {
-//     background-image: linear-gradient(45deg, #d62926, #ee625f);
-//   }
-//   .gradient[color="yellow"] {
-//     background-image: linear-gradient(45deg, #ffd400, #ffffb7);
-//   }
-//   .gradient[color="green"] {
-//     background-image: linear-gradient(45deg, #11998e, #1ce669);
-//   }
-//   .gradient[color="purple"] {
-//     background-image: linear-gradient(45deg, #552586, #b589d6);
-//   }
-// }
-
-// .firstPI {
-//   z-index: 0;
-//   animation: 1s width ease;
-// }
-
-// @keyframes width {
-//   from {
-//     width: 0%;
-//   }
-//   to {
-//     width: 100%;
-//   }
-// }
-
-// .secondPI {
-//   z-index: -1;
-// } // NOT USED ANYWARE
-
-// The right side of the product information page
 .infoPI {
   width: 100%;
   background-color: $mainWhite;
@@ -229,7 +99,7 @@
   left: 20px;
   transition: 0.5s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
     // color: $primaryColor;
   }
   @media (min-width: 435px) {
@@ -298,9 +168,13 @@
   width: 100%;
   height: auto;
   opacity: 0;
-  bottom: 0;
+  bottom: 20%;
   right: 0;
+  @media (max-width: 715px) {
+    bottom: 20%;
+  }
 }
+
 .showPI {
   opacity: 1;
 }
@@ -325,13 +199,7 @@
     font-size: 2rem;
     color: $body-font;
   }
-  //   .new {
-  //     background-color: $primaryColor;
-  //     text-transform: uppercase;
-  //     color: $mainWhite;
-  //     padding: 3px 10px;
-  //     border-radius: 5px;
-  //   }
+
   .etc {
     font-weight: 500;
     color: $body-font;
