@@ -25,7 +25,7 @@ body {
   padding: 0;
   font-size: 1.1rem;
   font-family: "Dosis", Helvetica, sans-serif;
-  color: #383838;
+  color: #808080;
   background-color: #ececec;
 }
 
@@ -345,12 +345,12 @@ h1 {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-color: #222;
+  background-color: #383838;
   border-radius: 50%;
   z-index: 11;
   top: 50%;
   margin-top: -20px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   line-height: 40px;
   font-size: 20px;
@@ -377,7 +377,7 @@ h1 {
   padding: 15px;
   left: 30px;
   bottom: 40px;
-  background-color: #fff;
+  background-color: #ffffff;
   padding-right: 50px;
 }
 
@@ -398,7 +398,7 @@ h1 {
   position: absolute;
   right: 0px;
   top: 0px;
-  color: #222;
+  color: #383838;
   height: 100%;
   width: 35px;
   text-align: center;
@@ -583,7 +583,7 @@ h1 {
   margin-left: 0;
   margin-top: 0;
   padding-left: 2rem;
-  color: #222;
+  color: #383838;
   border-left-style: solid;
   border-left-width: 1px;
   border-width: 0.25rem;
@@ -709,7 +709,7 @@ h1 {
 }
 
 .b-white {
-  border-color: #fff;
+  border-color: #ffffff;
 }
 
 .b-light-gray {
@@ -782,11 +782,11 @@ i.fas.fa-bars {
 
 .navbarUL li a {
   display: block;
-  color: #383838;
+  color: #808080;
 }
 
 .navbarLI {
-  border: 1px solid #222;
+  border: 1px solid #383838;
 }
 
 .activeLI {
@@ -795,7 +795,7 @@ i.fas.fa-bars {
 }
 
 .whiteText {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
 @media screen and (min-width: 376px) and (max-height: 375px) {
@@ -1088,7 +1088,7 @@ table.stripes tr:nth-child(even) {
 }
 
 .paymentAMZ {
-  background: #fff;
+  background: #ffffff;
   max-width: 360px;
   margin: 80px auto;
   height: auto;
@@ -1102,7 +1102,7 @@ table.stripes tr:nth-child(even) {
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 40px;
-  color: #222;
+  color: #383838;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1110,7 +1110,7 @@ table.stripes tr:nth-child(even) {
 
 .formFields .labelAMZ {
   display: block;
-  color: #222;
+  color: #383838;
   margin-bottom: 6px;
 }
 
@@ -1169,7 +1169,7 @@ table.stripes tr:nth-child(even) {
   bottom: 12px;
   left: 15px;
   font-size: 20px;
-  color: #222;
+  color: #383838;
 }
 
 .btnAMZ {
@@ -1221,11 +1221,11 @@ table.stripes tr:nth-child(even) {
 }
 
 .Main-black {
-  color: #222;
+  color: #383838;
 }
 
 .Main-white {
-  color: #fff;
+  color: #ffffff;
 }
 
 .Sec-blue {
@@ -1233,7 +1233,7 @@ table.stripes tr:nth-child(even) {
 }
 
 .Sec-black {
-  color: #222;
+  color: #383838;
 }
 
 .Sec-white {
@@ -1339,8 +1339,8 @@ table.stripes tr:nth-child(even) {
   padding-right: 1rem;
   margin-bottom: 0.5rem;
   display: inline-block;
-  border-color: #222;
-  color: #222;
+  border-color: #383838;
+  color: #383838;
 }
 
 .BTN-3:hover, .BTN-3:focus {
@@ -1399,7 +1399,7 @@ table.stripes tr:nth-child(even) {
 
 .shopping {
   color: #a1a9fe;
-  background: #fff;
+  background: #ffffff;
   font-family: "Lato", sans-serif;
 }
 
@@ -1447,7 +1447,7 @@ table.stripes tr:nth-child(even) {
   background: #a1a9fe;
   padding: 0 5px;
   border-radius: 30%;
-  color: #fff;
+  color: #ffffff;
 }
 
 .baskeT {
@@ -1484,7 +1484,7 @@ table.stripes tr:nth-child(even) {
   letter-spacing: 0.1rem;
   font-size: 1rem;
   background: #a1a9fe;
-  color: #222;
+  color: #383838;
   border: 1px solid #a1a9fe;
   transition: all 0.3s linear;
   cursor: pointer;
@@ -1540,7 +1540,7 @@ table.stripes tr:nth-child(even) {
 }
 
 .bag-btn:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .fa-shopping-cart {
@@ -1700,7 +1700,7 @@ table.stripes tr:nth-child(even) {
 
 .shopping {
   color: #a1a9fe;
-  background: #fff;
+  background: #ffffff;
   font-family: "Lato", sans-serif;
 }
 
@@ -1748,7 +1748,7 @@ table.stripes tr:nth-child(even) {
   background: #a1a9fe;
   padding: 0 5px;
   border-radius: 30%;
-  color: #fff;
+  color: #ffffff;
 }
 
 .baskeT {
@@ -1785,7 +1785,7 @@ table.stripes tr:nth-child(even) {
   letter-spacing: 0.1rem;
   font-size: 1rem;
   background: #a1a9fe;
-  color: #222;
+  color: #383838;
   border: 1px solid #a1a9fe;
   transition: all 0.3s linear;
   cursor: pointer;
@@ -1841,7 +1841,7 @@ table.stripes tr:nth-child(even) {
 }
 
 .bag-btn:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .fa-shopping-cart {
@@ -1985,4 +1985,385 @@ table.stripes tr:nth-child(even) {
 }
 
 /* --------------- End of Cart ---------------- */
+#pushPI {
+  background-color: #81e4e8;
+  display: block;
+  border-radius: 10px;
+  font-family: "Dosis", Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 1em;
+  color: #383838;
+  box-shadow: 10px 10px 10px #ececec;
+  border: none;
+}
+
+#pushPI:hover {
+  background-color: #616060;
+  color: #ffffff;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px #383838;
+}
+
+#pushPI:active {
+  background-color: #383838;
+  color: #ffffff;
+}
+
+#pullPI {
+  background-color: #a1a9fe;
+  display: block;
+  border-radius: 10px;
+  font-family: "Dosis", Helvetica, sans-serif;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 1rem;
+  border: none;
+  color: #ffffff;
+  box-shadow: 10px 10px 10px #ececec;
+}
+
+#pullPI:hover {
+  background-color: #616060;
+  transform: scale(0.93);
+  transition: 0.5s;
+  box-shadow: 2px 2px 5px #616060;
+}
+
+#pullPI:active {
+  background-color: #383838;
+  color: #ffffff;
+}
+
+.containerPI {
+  min-height: 125vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ececec;
+}
+
+@media (min-width: 768px) {
+  .containerPI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cardPI {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .cardPI {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 860px;
+  }
+}
+
+.productBackground {
+  width: 100%;
+  height: 595px;
+  background-color: #81e4e8;
+  position: relative;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.productBackground i {
+  font-size: 1.3em;
+  margin-top: 13px;
+}
+
+@media (min-width: 435px) {
+  .productBackground {
+    height: 100vh;
+  }
+  .productBackground .productPI {
+    height: 60%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .productBackground {
+    height: 770px;
+    width: 120%;
+  }
+}
+
+.infoPI {
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 35px 40px;
+  box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .infoPI {
+    height: 770px;
+  }
+}
+
+.logoPI {
+  position: absolute;
+  color: #ffffff;
+  width: 60px;
+  height: 60px;
+  top: 20px;
+  left: 20px;
+  transition: 0.5s;
+}
+
+.logoPI:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 435px) {
+  .logoPI {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.sharePI {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.sharePI:hover {
+  transform: scale(1.2);
+}
+
+.productBackground i {
+  line-height: 10px;
+}
+
+.productTitle {
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.3;
+  font-size: 4em;
+}
+
+@media (min-width: 375px) {
+  .productTitle {
+    left: 23px;
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 425px) {
+  .productTitle {
+    left: 37px;
+    top: 150px;
+    font-size: 5.5em;
+  }
+}
+
+@media (min-width: 768px) {
+  .productTitle {
+    top: 140px;
+    left: 30px;
+    font-size: 5.9em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .productTitle {
+    font-size: 6.15em;
+    left: 15px;
+  }
+}
+
+.productPI {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.showPI {
+  opacity: 1;
+}
+
+.productlimit {
+  width: 100%;
+  height: auto;
+}
+
+.productName {
+  padding: 0 0 10px 0;
+}
+
+.containerPI div {
+  display: flex;
+  align-items: center;
+}
+
+.divPI .bigPI {
+  margin-right: 10px;
+  font-size: 2rem;
+  color: #808080;
+}
+
+.divPI .etc {
+  font-weight: 500;
+  color: #808080;
+  margin-top: 3px;
+  text-transform: capitalize;
+}
+
+.productName,
+.descriptionPI,
+.color-containerPI,
+.quantityPI {
+  border-bottom: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+}
+
+.descriptionPI {
+  padding: 10px 0;
+}
+
+.etc {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.textPI {
+  color: #808080;
+  font-size: 17px;
+  text-indent: 35px;
+}
+
+.color-containerPI {
+  padding: 10px 0;
+}
+
+.colorChoicePI {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.colorChoicePI .colorPI {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 5px solid;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.colorChoicePI .colorPI[color="pink"] {
+  background-color: #ed8cc7;
+  border-color: #ed8cc7;
+}
+
+.colorChoicePI .colorPI[color="main"] {
+  background-color: #a1a9fe;
+  border-color: #a1a9fe;
+}
+
+.colorChoicePI .colorPI[color="yellow"] {
+  background-color: #ffe57b;
+  border-color: #ffe57b;
+}
+
+.colorChoicePI .colorPI[color="gray"] {
+  background-color: #ccc;
+  border-color: #ccc;
+}
+
+.colorChoicePI .colorPI[color="green"] {
+  background-color: #81e4e8;
+  border-color: #81e4e8;
+}
+
+.colorChoicePI .activePI {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
+  transform: scale(1.3);
+}
+
+.quantityPI {
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+.quantityPI input {
+  width: 100%;
+  height: 35px;
+  font-size: 1.4em;
+  text-align: center;
+  font-family: "Dosis", Helvetica, sans-serif;
+}
+
+.counterPrice {
+  padding-top: -5px;
+  padding-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricePI {
+  color: #383838;
+  display: flex;
+}
+
+.pricePI h1 {
+  font-size: 3.1rem;
+  font-weight: bolder;
+  line-height: 1;
+}
+
+.pricePI i {
+  font-size: 3.5rem;
+  color: #808080;
+  margin-right: 15px;
+}
+
+.buyPI {
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+.buyPI i {
+  margin-right: 1px;
+}
+
+.buyPI:hover {
+  transform: scale(1.1);
+}
 /*# sourceMappingURL=main.css.map */

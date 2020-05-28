@@ -3,105 +3,107 @@
 // }
 
 // IDs for buttons and button options.  Be sure to let me know if you want more options!
-#push {
-  background-color: $header;
+
+//Complete btn
+#pushPI {
+  background-color: $green;
   display: block;
-  border-radius: 20%;
+  border-radius: 10px;
   font-family: $font-main;
   text-align: center;
   padding: 10px 10px;
-  font-size: 0.8em;
+  font-size: 1em;
   color: $mainBlack;
   box-shadow: 10px 10px 10px $mainGrey;
-}
+  border: none;
+  &:hover {
+    background-color: $formGray;
+    color: $mainWhite;
+    transform: scale(0.93);
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px $mainBlack;
+  }
 
-#push:hover {
-  background-color: #e62a5a;
-  color: $mainWhite;
-  transform: scale(0.93);
-  transition: 0.5s;
-  box-shadow: 2px 2px 5px $mainBlack;
+  &:active {
+    background-color: $mainBlack;
+    color: $mainWhite;
+  }
 }
-
-#push:active {
-  background-color: orange;
-  color: purple;
-}
-
-#pull {
+//RESET to Default btn
+#pullPI {
   background-color: $primaryColor;
   display: block;
-  border-radius: 20%;
+  border-radius: 10px;
   font-family: $font-main;
   text-align: center;
   padding: 10px 10px;
-  font-size: 0.8em;
+  font-size: 1rem;
+  border: none;
   color: $mainWhite;
   box-shadow: 10px 10px 10px $mainGrey;
+  &:hover {
+    background-color: $formGray;
+    transform: scale(0.93);
+    transition: 0.5s;
+    box-shadow: 2px 2px 5px $formGray;
+  }
+
+  &:active {
+    background-color: $mainBlack;
+    color: $mainWhite;
+  }
 }
 
-#pull:hover {
-  background-color: #5e5601;
-  transform: scale(0.93);
-  transition: 0.5s;
-  box-shadow: 2px 2px 5px $mainBlack;
-}
+// #night {
+//   background-color: $mainBlack;
+//   display: block;
+//   border-radius: 20%;
+//   font-family: $font-main;
+//   text-align: center;
+//   padding: 10px 10px;
+//   font-size: 0.8em;
+//   color: $mainWhite;
+//   box-shadow: 10px 10px 10px $mainGrey;
+// }
 
-#pull:active {
-  background-color: orange;
-  color: purple;
-}
+// #night:hover {
+//   background-color: $mainWhite;
+//   color: $mainBlack;
+//   transform: scale(0.93);
+//   transition: 0.5s;
+//   box-shadow: 2px 2px 5px $mainBlack;
+// }
 
-#night {
-  background-color: $mainBlack;
-  display: block;
-  border-radius: 20%;
-  font-family: $font-main;
-  text-align: center;
-  padding: 10px 10px;
-  font-size: 0.8em;
-  color: $mainWhite;
-  box-shadow: 10px 10px 10px $mainGrey;
-}
+// #night:active {
+//   background-color: orange;
+//   color: purple;
+// }
 
-#night:hover {
-  background-color: $mainWhite;
-  color: $mainBlack;
-  transform: scale(0.93);
-  transition: 0.5s;
-  box-shadow: 2px 2px 5px $mainBlack;
-}
+// #day {
+//   background-color: $mainWhite;
+//   display: block;
+//   border-radius: 20%;
+//   font-family: $font-main;
+//   text-align: center;
+//   padding: 10px 10px;
+//   font-size: 0.8em;
+//   color: $mainBlack;
+//   box-shadow: 10px 10px 10px $mainGrey;
+// }
 
-#night:active {
-  background-color: orange;
-  color: purple;
-}
+// #day:hover {
+//   background-color: $mainBlack;
+//   color: $mainWhite;
+//   transform: scale(0.93);
+//   transition: 0.5s;
+//   box-shadow: 2px 2px 5px $mainBlack;
+// }
 
-#day {
-  background-color: $mainWhite;
-  display: block;
-  border-radius: 20%;
-  font-family: $font-main;
-  text-align: center;
-  padding: 10px 10px;
-  font-size: 0.8em;
-  color: $mainBlack;
-  box-shadow: 10px 10px 10px $mainGrey;
-}
-
-#day:hover {
-  background-color: $mainBlack;
-  color: $mainWhite;
-  transform: scale(0.93);
-  transition: 0.5s;
-  box-shadow: 2px 2px 5px $mainBlack;
-}
-
-#day:active {
-  background-color: orange;
-  color: purple;
-}
-.container_ {
+// #day:active {
+//   background-color: orange;
+//   color: purple;
+// }
+.containerPI {
   min-height: 125vh;
   display: flex;
   flex-direction: column;
@@ -114,7 +116,7 @@
 }
 
 // Keeps the content compartmentalized
-.card {
+.cardPI {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -133,7 +135,7 @@
 .productBackground {
   width: 100%;
   height: 595px;
-  background-color: $header;
+  background-color: $green;
   position: relative;
   box-shadow: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1),
     0 -15px 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1);
@@ -143,7 +145,7 @@
   }
   @media (min-width: 435px) {
     height: 100vh;
-    .product {
+    .productPI {
       height: 60%;
       width: 100%;
     }
@@ -155,59 +157,59 @@
 }
 
 // Colors of the left side
-.colors {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  .gradient {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: -2;
-  }
-  .gradient[color="blue"] {
-    background-image: linear-gradient(45deg, #0136af, #22abfa);
-  }
-  .gradient[color="red"] {
-    background-image: linear-gradient(45deg, #d62926, #ee625f);
-  }
-  .gradient[color="yellow"] {
-    background-image: linear-gradient(45deg, #ffd400, #ffffb7);
-  }
-  .gradient[color="green"] {
-    background-image: linear-gradient(45deg, #11998e, #1ce669);
-  }
-  .gradient[color="purple"] {
-    background-image: linear-gradient(45deg, #552586, #b589d6);
-  }
-}
+// .colors {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   left: 0;
+//   top: 0;
+//   .gradient {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+//     top: 0;
+//     z-index: -2;
+//   }
+//   .gradient[color="blue"] {
+//     background-image: linear-gradient(45deg, #0136af, #22abfa);
+//   }
+//   .gradient[color="red"] {
+//     background-image: linear-gradient(45deg, #d62926, #ee625f);
+//   }
+//   .gradient[color="yellow"] {
+//     background-image: linear-gradient(45deg, #ffd400, #ffffb7);
+//   }
+//   .gradient[color="green"] {
+//     background-image: linear-gradient(45deg, #11998e, #1ce669);
+//   }
+//   .gradient[color="purple"] {
+//     background-image: linear-gradient(45deg, #552586, #b589d6);
+//   }
+// }
 
-.first {
-  z-index: 0;
-  animation: 1s width ease;
-}
+// .firstPI {
+//   z-index: 0;
+//   animation: 1s width ease;
+// }
 
-@keyframes width {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
+// @keyframes width {
+//   from {
+//     width: 0%;
+//   }
+//   to {
+//     width: 100%;
+//   }
+// }
 
-.second {
-  z-index: -1;
-}
+// .secondPI {
+//   z-index: -1;
+// } // NOT USED ANYWARE
 
 // The right side of the product information page
-.info {
+.infoPI {
   width: 100%;
-  background-color: #fff;
+  background-color: $mainWhite;
   z-index: 1;
   padding: 35px 40px;
   box-shadow: 15px 0 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1),
@@ -218,46 +220,47 @@
 }
 
 // Image setting for logos
-.logo {
+.logoPI {
   position: absolute;
   color: $mainWhite;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   top: 20px;
   left: 20px;
   transition: 0.5s;
+  &:hover {
+    transform: scale(1.1);
+    // color: $primaryColor;
+  }
   @media (min-width: 435px) {
     height: 75px;
     width: 75px;
   }
 }
 
-.logo:hover {
-  transform: scale(1.5);
-  color: $mainBlack;
-}
-
 // The share "button"/icon
-.share {
+.sharePI {
   position: absolute;
   top: 15px;
   right: 15px;
   background-color: $mainWhite;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   text-align: center;
   font-size: 1.3rem;
   text-decoration: none;
   transition: 0.5s;
+  &:hover {
+    transform: scale(1.2);
+    //   background-color: $formGray;
+  }
 }
-i {
-  line-height: 50px;
-  color: $primaryColor;
-}
-.share:hover {
-  transform: scale(1.5);
-  background-color: $mainBlack;
+.productBackground i {
+  line-height: 10px;
+  //   &:hover {
+  //     color: $primaryColor;
+  //   }
 }
 
 // The product title on the left side of the page
@@ -266,7 +269,7 @@ i {
   top: 175px;
   left: 25px;
   text-transform: uppercase;
-  color: #fff;
+  color: $mainWhite;
   opacity: 0.3;
   font-size: 4em;
   @media (min-width: 375px) {
@@ -290,7 +293,7 @@ i {
 }
 
 // This is the image tag for products being sold!
-.product {
+.productPI {
   position: absolute;
   width: 100%;
   height: auto;
@@ -298,7 +301,7 @@ i {
   bottom: 0;
   right: 0;
 }
-.show {
+.showPI {
   opacity: 1;
 }
 
@@ -311,24 +314,31 @@ i {
 .productName {
   padding: 0 0 10px 0;
 }
-div {
+
+.containerPI div {
   display: flex;
   align-items: center;
-  .big {
+}
+.divPI {
+  // h1 {
+  //   display: block;
+  //   margin: 0 auto;
+  // }
+  .bigPI {
     margin-right: 10px;
     font-size: 2rem;
-    color: #333;
+    color: $body-font;
   }
-  .new {
-    background-color: $primaryColor;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 3px 10px;
-    border-radius: 5px;
-  }
+  //   .new {
+  //     background-color: $primaryColor;
+  //     text-transform: uppercase;
+  //     color: $mainWhite;
+  //     padding: 3px 10px;
+  //     border-radius: 5px;
+  //   }
   .etc {
     font-weight: 500;
-    color: #444;
+    color: $body-font;
     margin-top: 3px;
     text-transform: capitalize;
   }
@@ -336,16 +346,16 @@ div {
 
 // Stuff on  the right side of the page
 .productName,
-.description,
-.color-container,
-.quantity {
-  border-bottom: 1px solid #dadada;
+.descriptionPI,
+.color-containerPI,
+.quantityPI {
+  border-bottom: 1px solid $under-line;
   display: flex;
   flex-direction: column;
 }
 
 // Where you put the description
-.description {
+.descriptionPI {
   padding: 10px 0;
 }
 
@@ -357,21 +367,21 @@ div {
 }
 
 // The minor text in the description
-.text {
-  color: #555;
+.textPI {
+  color: $body-font;
   font-size: 17px;
   text-indent: 35px;
 }
 
 // Where you can choose the color options for the picture
-.color-container {
+.color-containerPI {
   padding: 10px 0;
 }
-.colorChoice {
+.colorChoicePI {
   padding: 8px 0;
   display: flex;
   align-items: center;
-  .color {
+  .colorPI {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -380,42 +390,42 @@ div {
     cursor: pointer;
     transition: 0.5s;
   }
-  .color[color="blue"] {
-    background-color: #0136af;
-    border-color: #0136af;
+  .colorPI[color="pink"] {
+    background-color: $pink;
+    border-color: $pink;
   }
-  .color[color="red"] {
-    background-color: #d62926;
-    border-color: #d62926;
+  .colorPI[color="main"] {
+    background-color: $primaryColor;
+    border-color: $primaryColor;
   }
-  .color[color="yellow"] {
-    background-color: #ffd400;
-    border-color: #ffd400;
+  .colorPI[color="yellow"] {
+    background-color: $yellow;
+    border-color: $yellow;
   }
-  .color[color="green"] {
-    background-color: #11998e;
-    border-color: #11998e;
+  .colorPI[color="gray"] {
+    background-color: $secGray;
+    border-color: $secGray;
   }
-  .color[color="purple"] {
-    background-color: #552586;
-    border-color: #552586;
+  .colorPI[color="green"] {
+    background-color: $green;
+    border-color: $green;
   }
-  .active {
-    border-color: #fff;
+  .activePI {
+    border-color: $mainWhite;
     box-shadow: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);
     transform: scale(1.3);
   }
 }
 
 // Involves quantity options
-.quantity {
+.quantityPI {
   padding: 10px 0;
   margin-bottom: 10px;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid $under-line;
   input {
     width: 100%;
     height: 35px;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: center;
     font-family: $font-main;
   }
@@ -431,8 +441,8 @@ div {
 }
 
 // Self-explanatory
-.price {
-  color: #333;
+.pricePI {
+  color: $mainBlack;
   display: flex;
   h1 {
     font-size: 3.1rem;
@@ -441,13 +451,13 @@ div {
   }
   i {
     font-size: 3.5rem;
-    color: #333;
+    color: $body-font;
     margin-right: 15px;
   }
 }
 
 // The "button"/icon you use to purchase stuff
-.buy {
+.buyPI {
   padding: 0.7rem 1rem;
   text-decoration: none;
   letter-spacing: 1px;
@@ -456,7 +466,7 @@ div {
   i {
     margin-right: 1px;
   }
-}
-.buy:hover {
-  transform: scale(1.3);
+  &:hover {
+    transform: scale(1.1);
+  }
 }

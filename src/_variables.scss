@@ -23,6 +23,7 @@ $header: #19d5a5;
 
 //default font
 $font-main: "Dosis", Helvetica, sans-serif;
+//body font color in amazing framework(not here)
 
 .primaryColor {
   color: $primaryColor;
@@ -35,8 +36,12 @@ $font-main: "Dosis", Helvetica, sans-serif;
 // shopping cart sass
 
 $mainTransition: all 0.3s linear;
-// $primaryColor: #f09d51;
-$mainWhite: #fff;
-$mainBlack: #222;
-$mainGrey: #ececec;
 $mainSpacing: 0.1rem;
+
+//Product info
+
+$pink: #ed8cc7;
+$yellow: #ffe57b;
+$green: #81e4e8;
+$body-font: #808080;
+$under-line: #dadada;
