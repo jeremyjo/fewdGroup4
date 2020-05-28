@@ -17,6 +17,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -1660,20 +1661,6 @@ table.stripes tr:nth-child(even) {
 }
 
 /* --------------- End of Cart ---------------- */
-/* :root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-} */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .shopping {
   color: #a1a9fe;
   background: #ffffff;
@@ -1681,7 +1668,8 @@ table.stripes tr:nth-child(even) {
 }
 
 @media print {
-  .no-print, .no-print * {
+  .no-print,
+  .no-print * {
     display: none !important;
   }
 }
