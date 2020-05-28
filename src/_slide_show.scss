@@ -159,41 +159,41 @@
 }
 
 @media (max-width: 767px) {
-  // .fragment {
-  //   display: none;
-  // }
+  .fragment {
+    display: none;
+  }
 
   // uncomment this section if you want image appear on a mobile screen
 
-  .imgSlide {
-    max-width: 50%;
-    max-height: 50%;
-  }
-  .slider .controlsSlide .prevS {
-    left: 10px;
-  }
+  // .imgSlide {
+  //   max-width: 50%;
+  //   max-height: 50%;
+  // }
+  // .slider .controlsSlide .prevS {
+  //   left: 10px;
+  // }
 
-  .slider .controlsSlide .prevS {
-    right: 10px;
-  }
-  .slider .slider-items .Oneitem .captionSlide {
-    padding: 15px 70px;
-    margin: 50% 40px;
-    .textS h1 {
-      font-size: 30px;
-    }
-    .textS p {
-      font-size: 16px;
-    }
-  }
-  .slider .controlsSlide {
-    .prevS,
-    .nextS {
-      top: 50%;
-      margin-top: -90px;
-    }
-  }
-  .slide-info {
-    display: none;
-  }
+  // .slider .controlsSlide .prevS {
+  //   right: 10px;
+  // }
+  // .slider .slider-items .Oneitem .captionSlide {
+  //   padding: 15px 70px;
+  //   margin: 50% 40px;
+  //   .textS h1 {
+  //     font-size: 30px;
+  //   }
+  //   .textS p {
+  //     font-size: 16px;
+  //   }
+  // }
+  // .slider .controlsSlide {
+  //   .prevS,
+  //   .nextS {
+  //     top: 50%;
+  //     margin-top: -90px;
+  //   }
+  // }
+  // .slide-info {
+  //   display: none;
+  // }
 }
