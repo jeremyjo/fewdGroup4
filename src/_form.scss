@@ -1,19 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu");
+.mainDiv {
+  margin: 0 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: "Ubuntu", sans-serif;
-// }
-
-// body {
-//   background:$primaryColor;
-//   margin: 0 10px;
-// }
-
-.payment {
-  background: #f8f8f8;
+.paymentAMZ 
+// main surface of the form
+{
+  background: $mainWhite;
   max-width: 360px;
   margin: 80px auto;
   height: auto;
@@ -23,43 +17,62 @@
   position: relative;
 }
 
-.payment h2 {
+.paymentAMZ h2 
+//main title of the form
+{
   text-align: center;
   letter-spacing: 2px;
   margin-bottom: 40px;
-  color: #0d3c61;
+  color: $mainBlack;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.form .label {
+.formFields .labelAMZ {
   display: block;
-  color: #555555;
+  color: $mainBlack;
   margin-bottom: 6px;
 }
 
-.input {
+.inputAMZ {
   padding: 13px 0px 13px 25px;
   width: 100%;
   text-align: center;
-  border: 2px solid #dddddd;
+  border: 2px solid $mainGrey;
+
   border-radius: 5px;
   letter-spacing: 1px;
   word-spacing: 3px;
   outline: none;
   font-size: 16px;
-  color: #555555;
+  color: $formGray;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .card-grp {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .card-item {
   width: 48%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .space {
   margin-bottom: 20px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .icon-relative {
@@ -76,49 +89,39 @@
   bottom: 12px;
   left: 15px;
   font-size: 20px;
-  color: #555555;
+  color: $mainBlack;
 }
 
-.btn {
+//BTN-1 style but without rule 'display: inline-block'
+.btnAMZ {
   margin-top: 40px;
   background: $header;
   padding: 12px;
   text-align: center;
-  color: #f8f8f8;
+  color: $secWhite;
   border-radius: 5px;
   cursor: pointer;
-}
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  color: $secWhite;
+  background-color: $primaryColor-font;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+  cursor: pointer;
 
-.payment-logo {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 100px;
-  background: #f8f8f8;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  line-height: 85px;
-}
-
-.payment-logo:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 90px;
-  height: 90px;
-  background: #2196f3;
-  border-radius: 50%;
-}
-
-.payment-logo p {
-  position: relative;
-  color: #f8f8f8;
-  font-family: "Baloo Bhaijaan", cursive;
-  font-size: 58px;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -129,7 +132,7 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .btn {
+  .btnAMZ {
     margin-top: 20px;
   }
 }

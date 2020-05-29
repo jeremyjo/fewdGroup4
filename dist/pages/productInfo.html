@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <article class="productBackground">
+          <div class="colors">
+            <div class="gradient" color="red"></div>
+            <div class="gradient" color="blue"></div>
+            <div class="gradient" color="yellow"></div>
+            <div class="gradient" color="green"></div>
+            <div class="gradient first" color="purple"></div>
+          </div>
+          <h1 class="productTitle">Product</h1>
+          <i class="fas fa-coffee logo"></i>
+          <a href="#" class="share" alt="share"><i class="fas fa-share"></i></a>
+
+          <img
+            src="../images/red-tea-detoxification.jpg"
+            alt="redProduct"
+            class="product show"
+            color="red"
+          />
+          <img
+            src="../images/61TSQsk2UbL._SL1280_.jpg"
+            alt="blueProduct"
+            class="product"
+            color="blue"
+          />
+          <img
+            src="../images/yellowTea.jpg"
+            alt="yellowProduct"
+            class="product"
+            color="yellow"
+          />
+          <img
+            src="../images/Green_tea_recipe.jpg"
+            alt="greenProduct"
+            class="product"
+            color="green"
+          />
+          <img
+            src="../images/Purple-Tea-tumblr.jpg"
+            alt="purpleProduct"
+            class="product"
+            color="purple"
+          />
+        </article>
+
+        <article class="info">
+          <div class="productName">
+            <div>
+              <h1 class="big">Example Product</h1>
+              <span class="new">new</span>
+            </div>
+            <br />
+            <button
+              id="pull"
+              onClick="window.location.href=window.location.href"
+            >
+              Reset to Default
+            </button>
+          </div>
+
+          <div class="description">
+            <h3 class="etc">Product Info</h3>
+            <br />
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+              libero? Rerum labore reprehenderit deleniti dolorem minus, et iure
+              aut consequuntur, odio inventore cupiditate, esse optio! Sint quos
+              tenetur quidem ut!
+            </p>
+          </div>
+
+          <div class="color-container">
+            <h3 class="etc">Color</h3>
+            <br />
+            <div class="colorChoice">
+              <span class="color active" primary="#d62926" color="red"></span>
+              <span class="color" primary="#0136af" color="blue"></span>
+              <span class="color" primary="#ffd400" color="yellow"></span>
+              <span class="color" primary="#11998e" color="green"></span>
+              <span class="color" primary="#552586" color="purple"></span>
+            </div>
+          </div>
+
+          <div class="quantity">
+            <h3 class="etc">Quantity</h3>
+            <br />
+            <label for="amount">How many?</label>
+            <input type="number" id="amount" name="amount" min="1" max="100" />
+          </div>
+
+          <div class="counterPrice">
+            <a href="#" class="buy"
+              ><i class="fas fa-shopping-cart"></i>&nbsp; Add to the Cart!</a
+            >
+            <div class="price">
+              <h2>$</h2>
+              <h2 id="total">123</h2>
+              <!-- Use JavaScript to Generate Price!  Work on documentation! -->
+            </div>
+            <button id="push" onclick="teaCost()">Calculate</button>
+          </div>
+          <div></div>
+        </article>
+      </div>
+    </main>
+
+    <script src="../script/productInfo.js"></script>
+  </body>
+</html>
