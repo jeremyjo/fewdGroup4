@@ -26,12 +26,13 @@
   background: $mainWhite;
   font-family: "Lato", sans-serif;
 }
-@media print {
-  .no-print,
-  .no-print * {
-    display: none !important;
-  }
-}
+// @media print {
+//   .no-print,
+//   .no-print * {
+//     display: none !important;
+//   }
+// }
+// added to noPrint.scss PARTIAL
 /* --------------- Navbar ---------------- */
 .navbarSh {
   position: sticky;

@@ -1,0 +1,90 @@
+//our target audience is US vendors and buyers. We assume they mostly use new browsers.
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+// IE old browsers remove border on images
+img {
+  border-style: none;
+}
+
+// block display for some elements (in old browsers it was not a preset )
+main,
+article,
+footer,
+header,
+nav,
+aside,
+figcaption,
+figure,
+section {
+  display: block;
+}
+
+// General Styles
+
+@import url("https://fonts.googleapis.com/css?family=Dosis");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-family: $font-main;
+  //comment when do example and maybe REMOVE
+  color: $body-font;
+  background-color: $color-backgrounds;
+}
+
+a {
+  text-decoration: none;
+  color: $primaryColor;
+  background-color: transparent; //removes gray-background on active links in IE browser #10.
+}
+
+ul {
+  list-style: none;
+}
+
+// h1,
+// h2,
+// h3,
+// h4 {
+//   text-transform: uppercase;
+// }
+
+//comment when do example and maybe REMOVE
+h1 {
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+
+// Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari.
+
+// h1 {
+//  font-size: 2em;
+//  margin: 0.67em 0;
+// }
