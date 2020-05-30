@@ -66,7 +66,7 @@
   box-sizing: border-box;
 }
 
-.space {
+.spaceSC {
   margin-bottom: 20px;
   margin-top: 0;
   margin-left: 0;
@@ -93,7 +93,7 @@
 }
 
 //BTN-1 style but without rule 'display: inline-block'
-.btnAMZ {
+.BTN-1_2 {
   margin-top: 40px;
   background: $header;
   padding: 12px;
@@ -132,7 +132,7 @@
     width: 100%;
     margin-bottom: 20px;
   }
-  .btnAMZ {
+  .BTN-1_2 {
     margin-top: 20px;
   }
 }

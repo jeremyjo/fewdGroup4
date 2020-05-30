@@ -955,7 +955,7 @@ table.stripes tr:nth-child(even) {
   box-sizing: border-box;
 }
 
-.space {
+.spaceSC {
   margin-bottom: 20px;
   margin-top: 0;
   margin-left: 0;
@@ -983,7 +983,7 @@ table.stripes tr:nth-child(even) {
   color: #383838;
 }
 
-.btnAMZ {
+.BTN-1_2 {
   margin-top: 40px;
   background: #19d5a5;
   padding: 12px;
@@ -1004,13 +1004,13 @@ table.stripes tr:nth-child(even) {
   cursor: pointer;
 }
 
-.btnAMZ:hover, .btnAMZ:focus {
+.BTN-1_2:hover, .BTN-1_2:focus {
   transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
 }
 
-.btnAMZ:active {
+.BTN-1_2:active {
   transform: scale(0.9);
 }
 
@@ -1022,7 +1022,7 @@ table.stripes tr:nth-child(even) {
     width: 100%;
     margin-bottom: 20px;
   }
-  .btnAMZ {
+  .BTN-1_2 {
     margin-top: 20px;
   }
 }
@@ -1170,6 +1170,66 @@ table.stripes tr:nth-child(even) {
   transform: scale(0.9);
 }
 
+.BTN-1_1 {
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  color: #f4f4f4;
+  background-color: #808080;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.BTN-1_1:hover, .BTN-1_1:focus {
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: opacity 0.15s ease-out;
+}
+
+.BTN-1_1:active {
+  transform: scale(0.9);
+}
+
+.BTN-1_2 {
+  margin-top: 40px;
+  background: #8187d8;
+  padding: 12px;
+  text-align: center;
+  color: #f4f4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  color: #f4f4f4;
+  background-color: #8187d8;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.BTN-1_2:hover, .BTN-1_2:focus {
+  transform: scale(1.05);
+  opacity: 0.8;
+  transition: opacity 0.15s ease-out;
+}
+
+.BTN-1_2:active {
+  transform: scale(0.9);
+}
+
 .BTN-2 {
   text-decoration: none;
   transform: translateZ(0);
@@ -1193,6 +1253,32 @@ table.stripes tr:nth-child(even) {
 }
 
 .BTN-2:active {
+  transform: scale(0.9);
+}
+
+.BTN-2_1 {
+  text-decoration: none;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-color: #808080;
+  color: #808080;
+  cursor: pointer;
+}
+
+.BTN-2_1:hover, .BTN-2_1:focus {
+  transform: scale(1.05);
+}
+
+.BTN-2_1:active {
   transform: scale(0.9);
 }
 
