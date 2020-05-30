@@ -23,7 +23,7 @@ function teaCost() {
   num2 = 10;
   document.getElementById("totalPI").innerHTML = num1 * num2;
 }
-
+//prevent default behavior - no jump when you click on link
 const defaultPI = document.querySelectorAll(".sharePI");
 
 defaultPI[0].addEventListener("click", function (event) {

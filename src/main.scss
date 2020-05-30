@@ -1,4 +1,5 @@
-@import "normalize";
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600;800&display=swap");
+
 @import "variables";
 @import "default";
 @import "slide_show";
@@ -12,7 +13,5 @@
 @import "buttons";
 @import "images";
 @import "shoppingCartComp";
-
 @import "productInfo";
-
 @import "resetCSS.scss";
