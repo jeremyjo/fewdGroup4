@@ -1,109 +1,108 @@
 // loads FontAwesome
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css");
+//added to main.scss
 
 // hamburger menu styling
 i.fas.fa-bars {
-    color: $hamburgerMenu;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    margin-top: 1em;
+  color: $hamburgerMenu;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 1em;
 }
 
 // used to display the navbar
 .displayGrid {
-    display: grid;
+  display: grid;
 }
 
 // used to remove the navbar
 .vanish {
-    display: none;
+  display: none;
 }
 
 // navbar <ul> styling
 .navbarUL {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  text-align: center;
 
-    & li a {
-        display: block;
-        color: $body-font;
-    }
+  & li a {
+    display: block;
+    color: $body-font;
+  }
 }
 
 // navbar <li> styling
 .navbarLI {
-    border: 1px solid $mainBlack;
+  border: 1px solid $mainBlack;
 }
 
 .activeLI {
-    background-color: $navbarBackground;
-    border-radius: 8px;
+  background-color: $navbarBackground;
+  border-radius: 8px;
 }
 
 .whiteText {
-    color: $mainWhite !important;
+  color: $mainWhite !important;
 }
 
 // landscape media query
 @media screen and (min-width: 376px) and (max-height: 375px) {
-    ul {
-        margin-top: 0.5em;
-    }
+  ul {
+    margin-top: 0.5em;
+  }
 
-    li {
-        grid-row: 1;
-    }
+  li {
+    grid-row: 1;
+  }
 
-    i.fas.fa-bars {
-        display: none;
-    }
+  i.fas.fa-bars {
+    display: none;
+  }
 
-    .displayGrid {
-        grid-template-rows: 1fr;
-        grid-template-columns: auto;
-    }
+  .displayGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+  }
 }
 
 // tablet media query
 @media screen and (min-width: 768px) {
-    ul {
-        margin-top: 1em;
-    }
-    
-    li {
-        grid-row: 1;
-    }
+  ul {
+    margin-top: 1em;
+  }
 
-    i.fas.fa-bars {
-        display: none;
-    }
+  li {
+    grid-row: 1;
+  }
 
-    .displayGrid {
-        grid-template-rows: 1fr;
-        grid-template-columns: auto;
-    }
+  i.fas.fa-bars {
+    display: none;
+  }
+
+  .displayGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+  }
 }
 
 // desktop media query
 // @media screen and (min-width: 1024px) {
 @media screen and (min-width: 900px) {
-
-// creates a border bottom CSS animation. border is under the <a>
-    .navbarUL li {
-        & a:after {
-                content: "";
-                display: block;
-                margin: 0 auto;
-                border-bottom: 1px solid $primaryColor;
-                width: 0%;
-                transition: 1.5s ease-out;
-        }
-        & a:hover:after {
-            width: 30%;
-            // border-bottom-color: $navbarBackground
-        }
+  // creates a border bottom CSS animation. border is under the <a>
+  .navbarUL li {
+    & a:after {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      border-bottom: 1px solid $primaryColor;
+      width: 0%;
+      transition: 1.5s ease-out;
     }
-
+    & a:hover:after {
+      width: 30%;
+      // border-bottom-color: $navbarBackground
+    }
+  }
 }
