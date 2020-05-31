@@ -1,3 +1,244 @@
+if (document.getElementsByClassName("uneven").length){
+    console.log("grid");
+    fnGrid();
+}
+
+if (document.querySelector('.navbarUL')){
+    console.log("navbar");
+    fnNavbar();
+}
+
+if (document.getElementsByTagName("table").length){
+    console.log("table");    
+    fnTable();
+}
+
+if (document.querySelectorAll(".productPI").length) {
+    console.log("product");
+    fnproductInfo();
+}
+
+// =============================================== grid.js =============================================================
+function fnGrid() {
+
+    var unevenContainer = document.getElementsByClassName("uneven");
+    var unevenChildren = unevenContainer[0].children;
+    var unevenChildrenCount = unevenChildren.length;
+    var widths = [];
+    var updatedGridCSS;
+    
+    for (var i = 0; i <unevenChildrenCount; i++){
+        if ( unevenChildren[i].className.includes("col-1of12") ){
+            widths[i] = 1;
+        } else if ( unevenChildren[i].className.includes("col-2of12") ) {
+            widths[i] = 2;
+        } else if ( unevenChildren[i].className.includes("col-3of12") ) {
+            widths[i] = 3;
+        } else if ( unevenChildren[i].className.includes("col-4of12") ) {
+            widths[i] = 4;
+        } else if ( unevenChildren[i].className.includes("col-5of12") ) {
+            widths[i] = 5;
+        } else if ( unevenChildren[i].className.includes("col-6of12") ) {
+            widths[i] = 6;
+        } else if ( unevenChildren[i].className.includes("col-7of12") ) {
+            widths[i] = 7;
+        } else if ( unevenChildren[i].className.includes("col-8of12") ) {
+            widths[i] = 8;
+        } else if ( unevenChildren[i].className.includes("col-9of12") ) {
+            widths[i] = 9;
+        } else if ( unevenChildren[i].className.includes("col-10of12") ) {
+            widths[i] = 10;
+        } else if ( unevenChildren[i].className.includes("col-11of12") ) {
+            widths[i] = 11;
+        } else if ( unevenChildren[i].className.includes("col-12of12") ) {
+            widths[i] = 12;
+        }   // if of last else if()
+    }       // end of for()
+    
+    updatedGridCSS = widths[0] + 'fr';
+    
+    for (var i=1; i<unevenChildrenCount; i++){
+        updatedGridCSS += ' ' + widths[i] + 'fr';
+    }
+    
+    unevenContainer[0].style.gridTemplateColumns = updatedGridCSS;
+}   // end of fnGrid()
+
+// =============================================== grid.js =============================================================
+
+// =============================================== navbar.js =============================================================
+function fnNavbar() {
+    // <nav>
+    const nav = document.querySelector('nav');
+    // navbar <ul>
+    const navbarUL = document.querySelector('.navbarUL');
+    // navbar <li>
+    const navbarLI = document.querySelectorAll('.navbarUL > li');
+    // hamburger menu
+    const hamburgerMenu = document.createElement('i');
+
+    // media query variable for mobile portrait mode
+    var mobilePortrait = window.matchMedia("(max-width: 360px)");
+
+    // media query variable for mobile landscape mode
+    var landscape = window.matchMedia("(orientation: landscape)");
+
+    // media query variable for table mode
+    var tablet = window.matchMedia("(min-width: 768px)");
+
+    // desktop query variable for desktop mode
+    var desktop = window.matchMedia("(min-width: 1023px)");
+
+    // checks to see if the .navbarUL class is used by the user(programmer)
+    if (navbarLI.length) {
+
+        if (mobilePortrait.matches) {
+            navbarUL.classList.add("vanish");
+        }
+
+        if (landscape) {
+            navbarUL.classList.toggle('displayGrid');
+        }
+
+        // inserts the hamburger menu into the DOM in <nav> before the <ul>
+        nav.insertBefore(hamburgerMenu, navbarUL);
+
+        // applies the FontAwesome classes
+        hamburgerMenu.className = "fas fa-bars";
+
+        // hamburger menu click functionality
+        hamburgerMenu.addEventListener('click', function() {
+            navbarUL.classList.toggle('vanish');
+            navbarUL.classList.toggle('displayGrid');
+        });
+    }
+
+    navbarLI.forEach( function(li) {
+        if(li.classList.contains("activeLI")) {
+            li.firstChild.classList.add("whiteText");
+        }
+    });
+
+    mobilePortrait.addListener(fnMobilePortrait);
+
+    // adds listener to the landscape media query. note executes both going to and coming out of landscape mode
+    landscape.addListener(fnLandscape);
+
+    // adds listener to the tablet media query. note executes both going to and coming out of landscape mode
+    tablet.addListener(fnTablet);
+
+    desktop.addListener(fnDesktop);
+
+    // ============ function definitions: =================== //
+    function fnMobilePortrait(event) {
+        event.preventDefault();
+
+        // defaul mode for navbar will be hidden
+        navbarUL.classList.add("vanish");
+    }
+
+
+    function fnLandscape(event){
+        event.preventDefault();
+        // viewport is now in landscape mode
+
+        // going to/coming from landscape mode
+        if (event.matches) {
+            // display the navbar
+            if (navbarUL.classList.contains('vanish') ) {
+                navbarUL.classList.remove('vanish');
+                navbarUL.classList.add('displayGrid');    
+            }   // end of if()
+
+        // going to/coming from portait mode  
+        } else {
+
+            // ensures the viewport is smaller than a tablet
+            if (window.matchMedia("(max-width: 767px)").matches) {
+
+                // do not display the navbar
+                if (navbarUL.classList.contains('displayGrid') ) {
+                    navbarUL.classList.remove('displayGrid');
+                    navbarUL.classList.add('vanish');
+                }   // end of if()
+
+            }       // end of if()
+
+        }       // in of else()       
+
+    }           // end of fnLandscape()
+
+    function fnTablet(event) {
+        event.preventDefault();
+
+        navbarUL.classList.remove("vanish");
+        navbarUL.classList.add("displayGrid");
+    }
+
+    function fnDesktop(event) {
+        event.preventDefault();
+        
+    }
+}       // end of fnNavbar()
+
+// =============================================== navbar.js =============================================================
+
+// =============================================== table.js =============================================================
+
+function fnTable(){
+    var table = document.getElementsByTagName("table");
+    var tableChildrenTR = table[0].children[0].children;
+    var tableChildrenTD;
+    
+    // cycles through all <tr>'s
+    Array.from(tableChildrenTR).forEach(function(tr){
+        let temp = 0;
+        let trColorChosen = "";
+    
+        if (tr.className.includes("color") ){
+            let trColor = tr.className;
+            for(var i = 0; i<trColor.length; i++){
+                
+                if(temp){
+                    trColorChosen += trColor.charAt(i);
+                }
+    
+                if(trColor.charAt(i) == '-') {
+                    temp = 1;
+                }
+    
+            }       // end of for()
+            tr.style.color = trColorChosen;
+        }           // end of if()
+    
+        // cycles through all <th>'s and <td>'s
+        Array.from(tr.children).forEach(function(td) {
+            
+            let tempTD = 0;
+            let tdColorChosen = "";
+    
+            if (td.className.includes("color") ) {
+                let tdColor = td.className;
+                for(var i = 0; i<tdColor.length; i++){
+                
+                    if(tempTD){
+                        tdColorChosen += tdColor.charAt(i);
+                    }
+        
+                    if(tdColor.charAt(i) == '-') {
+                        tempTD = 1;
+                    }
+        
+                }       // end of for()
+                td.style.color = tdColorChosen;
+            }
+        });     // end of Array.from(tr.children)
+    
+    });         // end of Array.from(tableChildrenTR)
+}       // end of fnTable()
+
+// =============================================== table.js =============================================================
+
 // =============================================== appComp.js =============================================================
 
 //variables
@@ -236,352 +477,45 @@ document.addEventListener("DOMContentLoaded",() =>{
 
 // =============================================== appComp.js =============================================================
 
+// =============================================== productInfo.js =============================================================
+function fnproductInfo() {
+    //colors shifts images
 
-// =============================================== grid.js =============================================================
+    const colorChoicePI = document.querySelectorAll(".colorPI");
+    const productspi = document.querySelectorAll(".productPI");
 
-var unevenContainer = document.getElementsByClassName("uneven");
-var unevenChildren = unevenContainer[0].children;
-var unevenChildrenCount = unevenChildren.length;
-var widths = [];
-var updatedGridCSS;
+    function changeColor() {
+    let color = this.getAttribute("color");
+    let productpi = document.querySelector(`.productPI[color="${color}"]`);
 
-for (var i = 0; i <unevenChildrenCount; i++){
-    if ( unevenChildren[i].className.includes("col-1of12") ){
-        widths[i] = 1;
-    } else if ( unevenChildren[i].className.includes("col-2of12") ) {
-        widths[i] = 2;
-    } else if ( unevenChildren[i].className.includes("col-3of12") ) {
-        widths[i] = 3;
-    } else if ( unevenChildren[i].className.includes("col-4of12") ) {
-        widths[i] = 4;
-    } else if ( unevenChildren[i].className.includes("col-5of12") ) {
-        widths[i] = 5;
-    } else if ( unevenChildren[i].className.includes("col-6of12") ) {
-        widths[i] = 6;
-    } else if ( unevenChildren[i].className.includes("col-7of12") ) {
-        widths[i] = 7;
-    } else if ( unevenChildren[i].className.includes("col-8of12") ) {
-        widths[i] = 8;
-    } else if ( unevenChildren[i].className.includes("col-9of12") ) {
-        widths[i] = 9;
-    } else if ( unevenChildren[i].className.includes("col-10of12") ) {
-        widths[i] = 10;
-    } else if ( unevenChildren[i].className.includes("col-11of12") ) {
-        widths[i] = 11;
-    } else if ( unevenChildren[i].className.includes("col-12of12") ) {
-        widths[i] = 12;
-    }   // if of last else if()
-}       // end of for()
+    colorChoicePI.forEach((c) => c.classList.remove("activePI"));
+    this.classList.add("activePI"); //color-buttons changes
 
-updatedGridCSS = widths[0] + 'fr';
-for (var i=1; i<unevenChildrenCount; i++){
-    updatedGridCSS += ' ' + widths[i] + 'fr';
-}
+    document.documentElement.style.setProperty;
 
-unevenContainer[0].style.gridTemplateColumns = updatedGridCSS;
-
-// =============================================== grid.js =============================================================
-
-// =============================================== navbar.js =============================================================
-// <nav>
-const nav = document.querySelector('nav');
-// navbar <ul>
-const navbarUL = document.querySelector('.navbarUL');
-// navbar <li>
-const navbarLI = document.querySelectorAll('.navbarUL > li');
-// hamburger menu
-const hamburgerMenu = document.createElement('i');
-
-// media query variable for mobile portrait mode
-var mobilePortrait = window.matchMedia("(max-width: 360px)");
-
-// media query variable for mobile landscape mode
-var landscape = window.matchMedia("(orientation: landscape)");
-
-// media query variable for table mode
-var tablet = window.matchMedia("(min-width: 768px)");
-
-// desktop query variable for desktop mode
-var desktop = window.matchMedia("(min-width: 1023px)");
-
-// checks to see if the .navbarUL class is used by the user(programmer)
-if (navbarLI.length) {
-
-    if (mobilePortrait.matches) {
-        navbarUL.classList.add("vanish");
+    productspi.forEach((s) => s.classList.remove("showPI"));
+    productpi.classList.add("showPI");
     }
 
-    if (landscape) {
-        navbarUL.classList.toggle('displayGrid');
+    colorChoicePI.forEach((c) => c.addEventListener("click", changeColor));
+
+    function teaCost() {
+    num1 = document.getElementById("amountPI").value;
+    num2 = 10;
+    document.getElementById("totalPI").innerHTML = num1 * num2;
     }
 
-    // inserts the hamburger menu into the DOM in <nav> before the <ul>
-    nav.insertBefore(hamburgerMenu, navbarUL);
+    const defaultPI = document.querySelectorAll(".sharePI");
 
-    // applies the FontAwesome classes
-    hamburgerMenu.className = "fas fa-bars";
+    defaultPI[0].addEventListener("click", function (event) {
+    event.preventDefault();
+    });
 
-    // hamburger menu click functionality
-    hamburgerMenu.addEventListener('click', function() {
-        navbarUL.classList.toggle('vanish');
-        navbarUL.classList.toggle('displayGrid');
+    const defaultPIBUY = document.querySelectorAll(".buyPI");
+
+    defaultPIBUY[0].addEventListener("click", function (event) {
+    event.preventDefault();
     });
 }
 
-navbarLI.forEach( function(li) {
-    if(li.classList.contains("activeLI")) {
-        li.firstChild.classList.add("whiteText");
-    }
-});
-
-mobilePortrait.addListener(fnMobilePortrait);
-
-// adds listener to the landscape media query. note executes both going to and coming out of landscape mode
-landscape.addListener(fnLandscape);
-
-// adds listener to the tablet media query. note executes both going to and coming out of landscape mode
-tablet.addListener(fnTablet);
-
-desktop.addListener(fnDesktop);
-
-// ============ function definitions: =================== //
-function fnMobilePortrait(event) {
-    event.preventDefault();
-
-    // defaul mode for navbar will be hidden
-    navbarUL.classList.add("vanish");
-}
-
-
-function fnLandscape(event){
-    event.preventDefault();
-    // viewport is now in landscape mode
-
-    // going to/coming from landscape mode
-    if (event.matches) {
-        // display the navbar
-        if (navbarUL.classList.contains('vanish') ) {
-            navbarUL.classList.remove('vanish');
-            navbarUL.classList.add('displayGrid');    
-        }   // end of if()
-
-      // going to/coming from portait mode  
-    } else {
-
-        // ensures the viewport is smaller than a tablet
-        if (window.matchMedia("(max-width: 767px)").matches) {
-
-            // do not display the navbar
-            if (navbarUL.classList.contains('displayGrid') ) {
-                navbarUL.classList.remove('displayGrid');
-                navbarUL.classList.add('vanish');
-            }   // end of if()
-
-        }       // end of if()
-
-    }       // in of else()       
-
-}           // end of fnLandscape()
-
-function fnTablet(event) {
-    event.preventDefault();
-
-    navbarUL.classList.remove("vanish");
-    navbarUL.classList.add("displayGrid");
-}
-
-function fnDesktop(event) {
-    event.preventDefault();
-    
-}
-// =============================================== navbar.js =============================================================
-
 // =============================================== productInfo.js =============================================================
-
-//colors shifts images
-
-const colorChoicePI = document.querySelectorAll(".colorPI");
-const productspi = document.querySelectorAll(".productPI");
-
-function changeColor() {
-  let color = this.getAttribute("color");
-  let productpi = document.querySelector(`.productPI[color="${color}"]`);
-
-  colorChoicePI.forEach((c) => c.classList.remove("activePI"));
-  this.classList.add("activePI"); //color-buttons changes
-
-  document.documentElement.style.setProperty;
-
-  productspi.forEach((s) => s.classList.remove("showPI"));
-  productpi.classList.add("showPI");
-}
-
-colorChoicePI.forEach((c) => c.addEventListener("click", changeColor));
-
-function teaCost() {
-  num1 = document.getElementById("amountPI").value;
-  num2 = 10;
-  document.getElementById("totalPI").innerHTML = num1 * num2;
-}
-
-const defaultPI = document.querySelectorAll(".sharePI");
-
-defaultPI[0].addEventListener("click", function (event) {
-  event.preventDefault();
-});
-
-const defaultPIBUY = document.querySelectorAll(".buyPI");
-
-defaultPIBUY[0].addEventListener("click", function (event) {
-  event.preventDefault();
-});
-
-// =============================================== productInfo.js =============================================================
-
-// =============================================== slideShow.js =============================================================
-
-const slides = document.querySelector(".slider-items").children;
-
-const slideItems = document.querySelector(".slider-items");
-
-const prev = document.querySelector(".prevS");
-const next = document.querySelector(".nextS");
-
-const totalSlides = slides.length;
-let index = 0;
-const duration = 6000;
-
-prev.onclick = function () {
-  slide("prevS");
-};
-
-next.onclick = function () {
-  slide("nextS");
-};
-
-function slide(direction) {
-  progress();
-  if (direction == "nextS") {
-    if (index == totalSlides - 1) {
-      //if index is equal to totalSlides
-      //then index =0
-      index = 0;
-    } else {
-      //if index is not equal to totalSlides length then  index++
-      index++;
-    }
-  }
-  //totalSlides starting from 0; 0-1-2 slides
-
-  if (direction == "prevS") {
-    if (index == 0) {
-      index = totalSlides - 1;
-    } else {
-      index--;
-    }
-  }
-  // stoppes auto slide when user clicks
-  clearInterval(timer);
-
-  //starting auto slider again
-
-  timer = setInterval(autoSlide, duration);
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("active");
-    //removes active class from all slides
-  }
-  slides[index].classList.add("active");
-  slideInfo();
-}
-
-let width = 100 / totalSlides;
-
-//slide info
-function slideInfo() {
-  document.querySelector(".numberS").innerHTML = index + 1 + "/" + totalSlides;
-  document.querySelector(".innerS").style.width = (index + 1) * width + "%";
-}
-
-//next slide progress meter
-
-function progress() {
-  document.querySelector(".progressSlide").innerHTML = "";
-  const div = document.createElement("div");
-
-  div.style.width = "0px";
-  div.style.position = "absolute";
-  div.style.left = "0";
-  div.style.top = "0";
-  div.style.backgroundColor = "#a1a9fe";
-  div.style.height = "5px";
-  div.id = "progressSlide";
-  div.style.animation = "progressSlide " + duration / 1000 + "s linear";
-  document.querySelector(".progressSlide").appendChild(div);
-}
-// auto slide
-function autoSlide() {
-  slide("nextS");
-}
-let timer = setInterval(autoSlide, duration);
-
-slideInfo();
-progress();
-
-// =============================================== slideShow.js =============================================================
-
-// =============================================== table.js =============================================================
-
-var table = document.getElementsByTagName("table");
-var tableChildrenTR = table[0].children[0].children;
-var tableChildrenTD;
-
-// cycles through all <tr>'s
-Array.from(tableChildrenTR).forEach(function(tr){
-    let temp = 0;
-    let trColorChosen = "";
-
-    if (tr.className.includes("color") ){
-        let trColor = tr.className;
-        for(var i = 0; i<trColor.length; i++){
-            
-            if(temp){
-                trColorChosen += trColor.charAt(i);
-            }
-
-            if(trColor.charAt(i) == '-') {
-                temp = 1;
-            }
-
-        }       // end of for()
-        tr.style.color = trColorChosen;
-    }           // end of if()
-
-    // cycles through all <th>'s and <td>'s
-    Array.from(tr.children).forEach(function(td) {
-        
-        let tempTD = 0;
-        let tdColorChosen = "";
-
-        if (td.className.includes("color") ) {
-            let tdColor = td.className;
-            for(var i = 0; i<tdColor.length; i++){
-            
-                if(tempTD){
-                    tdColorChosen += tdColor.charAt(i);
-                }
-    
-                if(tdColor.charAt(i) == '-') {
-                    tempTD = 1;
-                }
-    
-            }       // end of for()
-            td.style.color = tdColorChosen;
-        }
-    });     // end of Array.from(tr.children)
-
-});         // end of Array.from(tableChildrenTR)
-
-// =============================================== table.js =============================================================
-
-
