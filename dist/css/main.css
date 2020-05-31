@@ -1043,6 +1043,14 @@ table.stripes tr:nth-child(even) {
   color: #8187d8;
 }
 
+.Sec-blue_bg {
+  background-color: #8187d8;
+}
+
+.Sec-opac {
+  background-color: #d1d5ff;
+}
+
 .Sec-black {
   color: #383838;
 }
@@ -1057,6 +1065,14 @@ table.stripes tr:nth-child(even) {
 
 .primDark {
   color: #6f7bfd;
+}
+
+.white_bg {
+  background-color: #ffffff;
+}
+
+.black_bg {
+  background-color: #000000;
 }
 
 .lightBlue_bg {
@@ -1117,6 +1133,22 @@ table.stripes tr:nth-child(even) {
 
 .darkBrown_tx {
   color: #8d755b;
+}
+
+.white_tx {
+  color: white;
+}
+
+.black_tx {
+  color: #000000;
+}
+
+.gray_tx {
+  color: #808080;
+}
+
+.gray_bg {
+  background-color: #fafafa;
 }
 
 .float-l {
