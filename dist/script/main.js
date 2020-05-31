@@ -18,6 +18,11 @@ if (document.querySelectorAll(".productPI").length) {
     fnproductInfo();
 }
 
+if (document.querySelectorAll(".cart-overlay").length) {
+    console.log("shoppingCart");
+    fnShoppingCart();
+}
+
 // =============================================== grid.js =============================================================
 function fnGrid() {
 
@@ -240,7 +245,7 @@ function fnTable(){
 // =============================================== table.js =============================================================
 
 // =============================================== appComp.js =============================================================
-
+function fnShoppingCart() {
 //variables
 
 const cartBtn = document.querySelector(".cart-btn");
@@ -474,6 +479,8 @@ document.addEventListener("DOMContentLoaded",() =>{
         ui.cartLogic();
     });
 });
+}   // end of fnShoppingCart()
+
 
 // =============================================== appComp.js =============================================================
 
