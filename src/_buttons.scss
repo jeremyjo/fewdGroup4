@@ -27,6 +27,65 @@
   }
 }
 
+.BTN-1_1 {
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  color: $secWhite;
+  background-color: $body-font;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+//BTN-1 style but without rule 'display: inline-block'
+.BTN-1_2 {
+  margin-top: 40px;
+  background: $primaryColor-font;
+  padding: 12px;
+  text-align: center;
+  color: $secWhite;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 0;
+  text-decoration: none;
+  border-style: none;
+  border-width: 0;
+  color: $secWhite;
+  background-color: $primaryColor-font;
+  border-radius: 10px;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: opacity 0.15s ease-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
 .BTN-2 {
   text-decoration: none;
   transform: translateZ(0);
@@ -42,6 +101,32 @@
   display: inline-block;
   border-color: $primaryColor-font;
   color: $primaryColor-font;
+
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.BTN-2_1 {
+  text-decoration: none;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  border-radius: 9999px;
+  border-style: solid;
+  border-width: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+  border-color: $body-font;
+  color: $body-font;
 
   cursor: pointer;
   &:hover,

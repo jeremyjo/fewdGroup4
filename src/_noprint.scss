@@ -1,0 +1,8 @@
+@media print {
+  .no-print,
+  .no-print * {
+    display: none !important;
+  }
+}
+
+// add no-print class to the tad if you don't want people be able to ptint  certain content or to html tag if you don't want people would be ablpe to print page at all

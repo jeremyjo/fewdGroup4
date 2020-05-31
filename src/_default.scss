@@ -1,183 +1,45 @@
-// General Styles
+// // General Styles
 
-@import url("https://fonts.googleapis.com/css?family=Dosis");
+// @import url("https://fonts.googleapis.com/css?family=Dosis");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
-body {
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
-  font-size: 1.1rem;
-  font-family: $font-main;
-  color: $body-font;
-  background-color: $color-backgrounds;
-}
+// body {
+//   line-height: 1.6;
+//   margin: 0;
+//   padding: 0;
+//   font-size: 1.1rem;
+//   // font-family: $font-main;
+//   // color: $body-font;
+//   // background-color: $color-backgrounds;
+// }
 
-a {
-  text-decoration: none;
-  color: $primaryColor;
-}
+// a {
+//   text-decoration: none;
+//   // color: $primaryColor;
+// }
 
-ul {
-  list-style: none;
-}
+// ul {
+//   list-style: none;
+// }
 
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-}
+// h1,
+// h2,
+// h3,
+// h4 {
+//   text-transform: uppercase;
+// }
 
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.2;
-}
+// h1 {
+//   font-size: 2.8rem;
+//   line-height: 1.2;
+// }
 
-// Padding
-.pa 
-//-TB
-{
-  &-1 {
-    padding: 1rem 0;
-    //top and bottom paddings are 1rem
-    //right and left paddings are 0px
-  }
-  &-2 {
-    padding: 2rem 0;
-    //top and bottom paddings are 2rem
-    //right and left paddings are 0px
-  }
-  &-3 {
-    padding: 3rem 0;
-    //top and bottom paddings are 3rem
-    //right and left paddings are 0px
-  }
-  &-4 {
-    padding: 4rem 0;
-    //top and bottom paddings are 4rem
-    //right and left paddings are 0px
-  }
-}
-
-.pa-RL {
-  &-1 {
-    padding: 0 1rem;
-
-    //right and left paddings are 1px
-  }
-  &-2 {
-    padding: 0 2rem;
-
-    //right and left paddings are 2px
-  }
-  &-3 {
-    padding: 0 3rem;
-
-    //right and left paddings are 3px
-  }
-  &-4 {
-    padding: 0 4rem;
-
-    //right and left paddings are 4rem
-  }
-}
-
-.all-sides-pa {
-  &-0 {
-    padding: 0;
-    //all four paddings are 0
-  }
-  &-1 {
-    padding: 0.25rem;
-    //all four paddings are 0.25rem
-  }
-  &-2 {
-    padding: 0.5rem;
-    //all four paddings are 0.5rem
-  }
-  &-3 {
-    padding: 1rem;
-    //all four paddings are 1rem
-  }
-  &-4 {
-    padding: 2rem;
-    //all four paddings are 2rem
-  }
-  &-5 {
-    padding: 4rem;
-    //all four paddings are 4rem
-  }
-  &-6 {
-    padding: 8rem;
-    //all four paddings are 8rem
-  }
-}
-
-// Margin
-.ma
-//-TB
-{
-  &-1 {
-    margin: 1rem 0;
-  }
-  &-2 {
-    margin: 2rem 0;
-  }
-  &-3 {
-    margin: 3rem 0;
-  }
-  &-4 {
-    margin: 4rem 0;
-  }
-}
-
-.ma-RL {
-  &-1 {
-    margin: 0 1rem;
-  }
-  &-2 {
-    margin: 0 2rem;
-  }
-  &-3 {
-    margin: 0 3rem;
-  }
-  &-4 {
-    margin: 0 4rem;
-  }
-}
-
-.all-sides-ma {
-  &-0 {
-    margin: 0;
-  }
-  &-1 {
-    margin: 0.25rem;
-  }
-  &-2 {
-    margin: 0.5rem;
-  }
-  &-3 {
-    margin: 1rem;
-  }
-  &-4 {
-    margin: 2rem;
-  }
-  &-5 {
-    margin: 4rem;
-  }
-  &-6 {
-    margin: 8rem;
-  }
-  &-7 {
-    margin: 16rem;
-  }
-}
+//
 
 //center
 .text {
