@@ -25,10 +25,6 @@
   }
 }
 
-.primaryColor {
-  color: $primaryColor;
-}
-
 .primDark {
   color: darken($primaryColor, $amount: 10%);
 }

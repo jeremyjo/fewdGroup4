@@ -1055,10 +1055,6 @@ table.stripes tr:nth-child(even) {
   color: #ccc;
 }
 
-.primaryColor {
-  color: #a1a9fe;
-}
-
 .primDark {
   color: #6f7bfd;
 }
