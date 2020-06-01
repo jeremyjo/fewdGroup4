@@ -1,4 +1,5 @@
 //our target audience is US vendors and buyers. We assume they mostly use new browsers.
+
 *,
 ::before,
 ::after {
@@ -17,7 +18,6 @@ video {
   max-width: 100%;
   height: auto;
   display: block;
-  vertical-align: middle;
 }
 
 // IE old browsers remove border on images
@@ -39,8 +39,6 @@ section {
 }
 
 // General Styles
-
-@import url("https://fonts.googleapis.com/css?family=Dosis");
 
 * {
   margin: 0;
@@ -77,14 +75,14 @@ h4 {
 }
 
 //comment when do example and maybe REMOVE
-h1 {
-  font-size: 2.8rem;
-  line-height: 1.2;
-}
+// h1 {
+//   font-size: 2.8rem;
+//   line-height: 1.2;
+// }
 
 // Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari.
 
-// h1 {
-//  font-size: 2em;
-//  margin: 0.67em 0;
-// }
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
