@@ -708,6 +708,8 @@ i.fas.fa-bars {
   grid-template-rows: auto;
   margin-top: 1em;
   margin-bottom: 1em;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .col-1-embed {
