@@ -60,7 +60,6 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -72,13 +71,11 @@
     margin-bottom: 1em;
     border: 1px solid black;
     & :first-child {
-        color: red;
     }
     &-embed{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -93,7 +90,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -101,14 +97,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    border: 1px solid black;
     margin-top: 1em;
     margin-bottom: 1em;
     &-embed{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -123,7 +117,6 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -138,7 +131,6 @@
         display: grid;
         grid-template-columns: repeat(6 1fr);
         grid-template-rows: auto;
-        border: 1px solid blue;
     }
 }
 
@@ -146,53 +138,4 @@
     display: grid;
     // grid-template-columns: 2fr 4fr;  // count of # of divs
     grid-template-rows: auto;
-    border: solid 1px black;
-}
-
-.col-1of12 {
-    border: 1px solid red;
-}
-
-.col-2of12 {
-    border: 1px solid green;
-}
-
-.col-3of12 {
-    border: 1px solid blue;
-}
-
-.col-4of12 {
-    border: 1px solid purple;
-}
-
-.col-5of12 {
-    border: 1px solid black;
-}
-
-.col-6of12 {
-    border: 1px solid brown;
-}
-
-.col-7of12 {
-    border: 1px solid orange;
-}
-
-.col-8of12 {
-    border: 1px solid #069;
-}
-
-.col-9of12 {
-    border: 1px solid pink;
-}
-
-.col-10of12 {
-    border: 1px solid gray;
-}
-
-.col-11of12 {
-    border: 1px solid salmon;
-}
-
-.col-12of12 {
-    border: 1px solid teal;
 }
