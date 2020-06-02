@@ -1158,6 +1158,10 @@ table.stripes tr:nth-child(even) {
   color: #309c32;
 }
 
+.beige_bg {
+  background-color: #e7e2dd;
+}
+
 .float-l {
   float: left;
 }
