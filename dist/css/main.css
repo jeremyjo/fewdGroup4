@@ -706,7 +706,6 @@ i.fas.fa-bars {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  border: 1px solid black;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -723,7 +722,6 @@ i.fas.fa-bars {
   grid-template-rows: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  border: 1px solid black;
 }
 
 .col-2-embed {
@@ -765,7 +763,6 @@ i.fas.fa-bars {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  border: 1px solid black;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -780,7 +777,6 @@ i.fas.fa-bars {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: auto;
-  border: 1px solid black;
   margin-top: 1em;
   margin-bottom: 1em;
 }
