@@ -2069,30 +2069,16 @@ section {
 }
 
 body {
-  line-height: 1.6;
   margin: 0;
-  padding: 0;
-  font-size: 1.1rem;
-  font-family: "Dosis", Helvetica, sans-serif;
-  color: #808080;
-  background-color: #ececec;
 }
 
 a {
   text-decoration: none;
-  color: #a1a9fe;
   background-color: transparent;
 }
 
 ul {
   list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
 }
 
 h1 {
