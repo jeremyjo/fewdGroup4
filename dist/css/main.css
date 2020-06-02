@@ -1150,6 +1150,14 @@ table.stripes tr:nth-child(even) {
   background-color: #fafafa;
 }
 
+.juicy_green_tx {
+  color: #309c32;
+}
+
+.juicy_green_bg {
+  color: #309c32;
+}
+
 .float-l {
   float: left;
 }
