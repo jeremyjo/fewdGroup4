@@ -1,38 +1,15 @@
-/* :root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-} */
-// html{
-//   // --primaryColor: #f09d51;
-//   // --mainWhite: #fff;
-//   // --mainBlack: #222;
-//   // --mainGrey: #ececec;
-//   // --mainSpacing: 0.1rem;
-//   // --mainTransition: all 0.3s linear;
-// }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .shopping {
-  // color: var(--mainBlack);
   color: $primaryColor;
 
   background: $mainWhite;
   font-family: "Lato", sans-serif;
 }
-// @media print {
-//   .no-print,
-//   .no-print * {
-//     display: none !important;
-//   }
-// }
-// added to noPrint.scss PARTIAL
+
 /* --------------- Navbar ---------------- */
 .navbarSh {
   position: sticky;
@@ -101,7 +78,7 @@
   background: $primaryColor;
   color: $mainBlack;
   border: 1px solid $primaryColor;
-  // transition: var(--mainTransition);
+
   transition: $mainTransition;
   cursor: pointer;
 }
@@ -193,7 +170,7 @@
   width: 100%;
   height: 100%;
   transition: $mainTransition;
-  // background: rgb(240, 157, 81, 0.5);
+
   z-index: 2;
   visibility: hidden;
 }
