@@ -48,17 +48,6 @@ section {
   box-sizing: border-box;
 }
 
-body {
-  // line-height: 1.6;
-  margin: 0;
-  // padding: 0;
-  // font-size: 1.1rem;
-  // font-family: $font-main;
-  // comment when do example and maybe REMOVE
-  // color: $body-font;
-  // background-color: $color-backgrounds;
-}
-
 a {
   text-decoration: none;
   // color: $primaryColor;
@@ -68,6 +57,15 @@ a {
 ul {
   list-style: none;
 }
+
+// Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari.
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+// uncomment if you need colors and starting styling for your web site
 
 // h1,
 // h2,
@@ -80,12 +78,13 @@ ul {
 // h1 {
 //   font-size: 2.8rem;
 //   line-height: 1.2;
-
 // }
 
-// Correct the font size and margin on h1 elements within section and article contexts in Chrome, Firefox, and Safari.
-
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+// body {
+//   line-height: 1.6;
+//   padding: 0;
+//   font-size: 1.1rem;
+//   font-family: $font-main;
+//   color: $body-font;
+//   background-color: $color-backgrounds;
+// }
