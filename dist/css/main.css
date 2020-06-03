@@ -266,6 +266,8 @@
   .fragment {
     display: none;
   }
+  /* ------------------------------------------------------------------- */
+  /* ------------------------------------------------------------------- */
 }
 
 .ital {
@@ -1316,14 +1318,6 @@ table.stripes tr:nth-child(even) {
   height: auto;
 }
 
-/* :root {
-  --primaryColor: #f09d51;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainGrey: #ececec;
-  --mainSpacing: 0.1rem;
-  --mainTransition: all 0.3s linear;
-} */
 * {
   margin: 0;
   padding: 0;
@@ -2030,4 +2024,8 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+/* uncomment if you need colors and starting styling for your web site */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
 /*# sourceMappingURL=main.css.map */
