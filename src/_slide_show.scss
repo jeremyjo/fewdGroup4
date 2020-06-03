@@ -133,8 +133,6 @@
   }
 }
 
-// #progress {
-// }
 @keyframes progressSlide {
   0% {
     width: 0%;
@@ -164,7 +162,7 @@
   }
 
   // uncomment this section if you want image appear on a mobile screen
-
+  /* ------------------------------------------------------------------- */
   // .imgSlide {
   //   max-width: 50%;
   //   max-height: 50%;
@@ -196,4 +194,5 @@
   // .slide-info {
   //   display: none;
   // }
+  /* ------------------------------------------------------------------- */
 }
